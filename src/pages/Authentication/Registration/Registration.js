@@ -5,7 +5,7 @@ import useAuth from '../../../hooks/useAuth';
 import './Registration.css';
 
 const Registration = () => {
-    const { setUser, setUserDetails, signInUsingGoogle, processRegistration, setIsLoading } = useAuth();
+    const { setUser, setUserDetails, signInUsingGoogle, processRegistration, setIsLoading} = useAuth();
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');

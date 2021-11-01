@@ -41,7 +41,7 @@ const useFirebase = () => {
             setError('Password should be at least of 6 characters and must have at least one uppercase letter, one digits, one lowercase letter');
             return;
         }
-        return createUserWithEmailAndPassword(auth, email, password)
+        return createUserWithEmailAndPassword(auth, email, password, error)
     }
 
 
@@ -90,7 +90,9 @@ const useFirebase = () => {
         processRegistration,
         processLogin,
         logOut,
-        setUserDetails
+        setUserDetails,
+        error,
+        setError
     }
 };
 

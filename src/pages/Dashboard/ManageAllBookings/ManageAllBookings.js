@@ -65,28 +65,6 @@ const ManageAllBookings = () => {
                                         manageBookings.map(booking =>
                                             <div className="col">
                                                 <div className="card bookings p-3 border-0 rounded-0 h-100">
-                                                    {/* <div className="d-flex justify-content-between align-items-center">
-                                                        <p>Booking Id: <p className="booking-id">{booking?._id}</p></p>
-                                                        {booking.status === 'pending' ? (<p className="status-red card-text">{booking?.status}</p>) : (<p className="status-green card-text">{booking?.status}</p>)}
-                                                    </div>
-                                                    <img src={booking?.destinationImg} alt="" className="w-100" />
-                                                    <h6 className="card-title mt-3 mb-0">Package Name: <span className="ms-1 fs-4">{booking?.packageName}</span></h6>
-                                                    <p className="mt-4 text-decoration-underline">User Information</p>
-                                                    <div className="mt-2">
-                                                        <p>Name: <span className="info ms-1 text-decoration-underline">{booking?.name}</span></p>
-                                                        <p>Email Address: <span className="info ms-1 text-decoration-underline">{booking?.email}</span></p>
-                                                        <p>Phone No: <span className="info ms-1 text-decoration-underline">{booking?.phoneNo}</span></p>
-                                                        <p>Date to Visit: <span className="info ms-1 text-decoration-underline">{booking?.dateToVisit}</span></p>
-                                                        <p>No of tickets: <span className="info ms-1 text-decoration-underline">{booking?.numberOfTickets}</span></p>
-                                                    </div>
-                                                    <div className="mt-4 d-flex justify-content-between align-items-center">
-
-                                                    </div>
-                                                    <div className="d-flex justify-content-between align-items-center">
-                                                        <button className="btn btn-outline-dark rounded-0" onClick={() => updateBookingStatus(booking._id)}><span className="text-success">Approve the package</span></button>
-                                                        <button className="btn btn-outline-dark rounded-0" onClick={() => deleteBooking(booking._id)}><span className="text-danger">Delete the package</span></button>
-                                                    </div> */}
-
                                                     <div className="row gy-3 gx-5">
                                                         <div className="col-12 col-lg-5">
                                                             <div className="mt-3">
@@ -114,7 +92,7 @@ const ManageAllBookings = () => {
                                                                     {booking.status === 'pending' ? (<small className="status-red text-center">{booking?.status}</small>) : (<small className="status-green text-center">{booking?.status}</small>)}
                                                                 </div>
                                                                 <div className="d-flex justify-content-center align-items-center">
-                                                                    <button className="btn btn-outline-success rounded-0 me-1" onClick={() => updateBookingStatus(booking._id)}><i class="fas fa-check-double fs-6 text-dark"></i></button>
+                                                                    {booking.status === 'pending' && <button className="btn btn-outline-success rounded-0 me-1" onClick={() => updateBookingStatus(booking._id)}><i class="fas fa-check-double fs-6 text-dark"></i></button>}
                                                                     <button className="btn btn-outline-danger rounded-0" onClick={() => deleteBooking(booking._id)}><i class="fas fa-trash-alt fs-6 text-dark"></i></button>
                                                                 </div>
                                                             </div>

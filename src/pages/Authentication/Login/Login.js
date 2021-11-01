@@ -73,11 +73,11 @@ const Login = () => {
                                     Your password must be at least 6 characters long, contain at least one uppercase letter and at least a number.
                                 </div>
                             </div>
+                            <div className="mt-3 text-danger">{error}</div>
                             <div className="text-center">
                                 <button type="submit" className="btn btn-outline-dark rounded-0 mb-3">Login</button>
                                 <p>New User? <NavLink className="text-decoration-none text-dark account-switch ms-2" to="/register">Create Account</NavLink></p>
                             </div>
-                            <div className="mt-3 text-danger">{error}</div>
                         </form>
                         <hr className="mt-4" />
                         <div className="mt-4 text-center">

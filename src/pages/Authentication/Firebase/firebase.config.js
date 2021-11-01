@@ -1,10 +1,10 @@
 const firebaseConfig = {
-    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-    authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
-    projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
-    storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
-    messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
-    appId: process.env.REACT_APP_FIREBASE_APP_ID,
+    apiKey: "AIzaSyDXKZRkB6Vx1mWm3pg3DrpNFSEoZzNhEQA",
+    authDomain: "holiday-planner-bac0a.firebaseapp.com",
+    projectId: "holiday-planner-bac0a",
+    storageBucket: "holiday-planner-bac0a.appspot.com",
+    messagingSenderId: "629162412013",
+    appId: "1:629162412013:web:9ee7a2b124aeb9b78949e4"
 };
 
 export default firebaseConfig;

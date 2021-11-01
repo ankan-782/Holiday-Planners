@@ -46,6 +46,7 @@ const Registration = () => {
         setIsLoading(true);
         processRegistration(email, password)
             .then(result => {
+                console.log(result);
                 setUserDetails(name);
                 history.push(redirect_url);
                 setError('');

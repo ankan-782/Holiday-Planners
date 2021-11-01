@@ -66,14 +66,14 @@ const Login = () => {
                                 <input type="email" onBlur={getEmail} className="form-control input-bg py-3 rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="abc@pqr.xyz" required />
                                 <div id="emailHelp" className="form-text text-dark">We'll never share your email with anyone else.</div>
                             </div>
-                            <div className="mb-5">
+                            <div className="mb-3">
                                 <label htmlFor="inputPassword5" className="form-label fs-6">Password</label>
                                 <input type="password" onBlur={getPassword} id="inputPassword5" className="form-control input-bg py-3 rounded-0" aria-describedby="passwordHelpBlock" placeholder="Password" required />
                                 <div id="passwordHelpBlock" className="form-text text-dark">
                                     Your password must be at least 6 characters long, contain at least one uppercase letter and at least a number.
                                 </div>
                             </div>
-                            <div className="mt-1 text-danger">{error}</div>
+                            <div className="text-danger">{error}</div>
                             <div className="text-center">
                                 <button type="submit" className="btn btn-outline-dark rounded-0 mb-3">Login</button>
                                 <p>New User? <NavLink className="text-decoration-none text-dark account-switch ms-2" to="/register">Create Account</NavLink></p>

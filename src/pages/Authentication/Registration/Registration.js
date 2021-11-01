@@ -5,12 +5,12 @@ import useAuth from '../../../hooks/useAuth';
 import './Registration.css';
 
 const Registration = () => {
-    const { setUser, setUserDetails, signInUsingGoogle, processRegistration, setIsLoading} = useAuth();
+    const { setUser, setUserDetails, signInUsingGoogle, processRegistration, setIsLoading, error, setError } = useAuth();
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [name, setName] = useState('');
-    const [error, setError] = useState('');
+    // const [error, setError] = useState('');
 
     const location = useLocation();
     const history = useHistory();
@@ -41,7 +41,6 @@ const Registration = () => {
 
 
 
-    //registration method (sign up)
     const handleRegistration = (e) => {
         e.preventDefault();
         setIsLoading(true);

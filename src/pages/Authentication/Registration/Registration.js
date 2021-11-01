@@ -88,12 +88,12 @@ const Registration = () => {
                                 <button type="submit" className="btn btn-outline-dark rounded-0 mb-3">Register</button>
                                 <p>Already have an account? <NavLink className="text-decoration-none text-dark account-switch ms-2" to="/login">Please Login</NavLink></p>
                             </div>
+                            <div className="mt-3 text-danger">{error}</div>
                         </form>
                         <hr className="mt-4" />
                         <div className="mt-4 text-center">
                             <button onClick={handleGoogleLogin} className="btn btn-outline-dark rounded-0"><p><i className="fab fa-google me-3"></i>Google Sign In</p></button>
                         </div>
-                        <div className="mt-3 text-danger">{error}</div>
                     </div>
                 </div>
             </div>

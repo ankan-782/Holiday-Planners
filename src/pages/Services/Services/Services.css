@@ -1,0 +1,15 @@
+.services-bg {
+    background-color: rgb(242, 226, 250);
+}
+.services-content {
+    padding-top: 50px !important;
+    padding-bottom: 100px !important;
+}
+.spinner-bg {
+    background-color: rgb(242, 226, 250);
+}
+@media screen and (min-width: 992px){
+    .spinner-content{
+        min-height: calc(100vh - 66px);
+    }
+}

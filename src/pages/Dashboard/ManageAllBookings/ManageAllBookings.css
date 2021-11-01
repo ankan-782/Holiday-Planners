@@ -1,0 +1,49 @@
+.manage-all-bookings-bg {
+    background-color: rgb(242, 226, 250);
+}
+.border-bottom-design-manage-all-bookings {
+    border-bottom: 2px solid rgb(242, 226, 250);
+}
+.border-bottom-design-manage-all-bookings:hover {
+    border-bottom: 2px solid black;
+}
+.bookings {
+    background-color: rgb(251, 241, 250);
+    border: 1px solid black !important;
+    box-shadow: 0.5px 0.5px 10px rgb(190, 172, 186);
+    transition: 0.3s;
+}
+.bookings:hover {
+    box-shadow: 0.5px 0.5px 30px 5px rgb(190, 172, 186);
+    transition: 0.3s;
+}
+.booking-id {
+    text-align: center;
+    background-color: rgb(217, 174, 221);
+    border-radius: 20px;
+    padding: 2px 10px;
+}
+.info {
+    color: rgb(179, 88, 159);
+}
+.status-red {
+    background-color: rgb(214, 50, 50);
+    color: white;
+    border-radius: 20px;
+    padding: 0 10px;
+}
+.status-green {
+    background-color: rgb(46, 136, 24);
+    color: white;
+    border-radius: 20px;
+    padding: 0 10px;
+}
+/* .manage-booking-img {
+    width: 20%;
+} */
+
+@media screen and (min-width: 992px){
+    .manage-all-bookings-content{
+        min-height: calc(100vh - 66px);
+    }
+}

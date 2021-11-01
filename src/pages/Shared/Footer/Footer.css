@@ -1,0 +1,41 @@
+p {
+    font-size: 15px;
+    margin: 0;
+}
+#big-footer {
+    background-color: rgb(185, 163, 195);
+}
+
+.footer-brand {
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    transition: 0.7s ease;
+    border-bottom: 3px solid rgb(185, 163, 195);
+}
+
+.footer-brand:hover{
+    border-bottom: 3px solid black;
+    transition: 0.7s ease;
+}
+.form-control:focus{
+    border-color: black;
+    box-shadow: 0 0 0 0.25rem rgba(66, 70, 73, 0.5) !important
+}
+
+.footer-input-bg {
+    color: white;
+    border: 1px solid black;
+    background-color: rgb(56, 60, 63);
+}
+
+
+.social-links a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 3px solid rgb(185, 163, 195);
+}
+
+.social-links a:hover {
+    border-bottom: 3px solid black;
+    transition: 0.7s ease;
+}

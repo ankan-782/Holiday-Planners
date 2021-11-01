@@ -1,0 +1,15 @@
+.service-in-home {
+    background-color: rgb(251, 241, 250);
+    box-shadow: 0.5px 0.5px 10px rgb(190, 172, 186);
+    transition: 0.3s;
+}
+.service-in-home:hover {
+    box-shadow: 0.5px 0.5px 30px 5px rgb(190, 172, 186);
+    transition: 0.3s;
+}
+.destination-name {
+    margin-left: 15px;
+    background-color: rgb(49, 49, 49);
+    width: 50%;
+    margin-top: -15px;
+}

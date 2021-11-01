@@ -1,0 +1,19 @@
+.brand {
+    font-family: 'Josefin Sans', sans-serif;
+}
+.navbar-bg {
+    background-color: rgb(185, 163, 195);
+}
+.border-bottom-design {
+    border-bottom: 2px solid rgb(185, 163, 195);
+}
+.border-bottom-design:hover {
+    border-bottom: 2px solid black;
+}
+.user-img {
+    border: 1px solid black;
+    object-fit: cover;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}

@@ -84,7 +84,7 @@ const Registration = () => {
                                     Your password must be at least 6 characters long, contain at least one uppercase letter and at least a number.
                                 </div>
                             </div>
-                            <div className="mt-3 text-danger">{error}</div>
+                            <div className="mt-1 text-danger">{error}</div>
                             <div className="text-center">
                                 <button type="submit" className="btn btn-outline-dark rounded-0 mb-3">Register</button>
                                 <p>Already have an account? <NavLink className="text-decoration-none text-dark account-switch ms-2" to="/login">Please Login</NavLink></p>

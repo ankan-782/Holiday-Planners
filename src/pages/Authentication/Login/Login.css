@@ -1,5 +1,6 @@
 #login {
-    padding-top: 10px;
+    padding-top: 80px;
+    min-height: 100vh;
 }
 .login-bg {
     background-color: rgb(225, 207, 235);
@@ -35,6 +36,10 @@
 
 
 @media screen and (min-width: 992px){
+    #login {
+        padding-top: 10px;
+        min-height: 100vh;
+    }
     .login-content-sizing {
         width: 50%;
         margin: 0 auto;

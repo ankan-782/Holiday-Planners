@@ -1,5 +1,6 @@
 #registration {
-    padding-top: 10px;
+    padding-top: 80px;
+    min-height: 100vh;
 }
 .registration-bg {
     background-color: rgb(225, 207, 235);
@@ -35,6 +36,10 @@
 
 
 @media screen and (min-width: 992px){
+    #registration {
+        padding-top: 10px;
+        min-height: 100vh;
+    }
     .registration-content-sizing {
         width: 50%;
         margin: 0 auto;

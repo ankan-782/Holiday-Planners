@@ -17,7 +17,7 @@ const AboutUs = () => {
                                     <div className="img-content">
                                         <div className="d-flex justify-content-center align-items-center">
                                             <h3 className="position-absolute text-white">C O X' S B A Z A R</h3>
-                                            <img src={img1} alt="" className="img-fluid border border-2 p-2 border-dark" />
+                                            <img src={img1} alt="" className="img-fluid border-radius border border-2 p-2 border-dark" />
                                         </div>
                                     </div>
                                 </div>
@@ -25,7 +25,7 @@ const AboutUs = () => {
                                     <div className="img-content">
                                         <div className="d-flex justify-content-center align-items-center">
                                             <h3 className="position-absolute text-white">G U L I A K H A L I</h3>
-                                            <img src={img2} alt="" className="img-fluid border border-2 p-2 border-dark" />
+                                            <img src={img2} alt="" className="img-fluid border-radius border border-2 p-2 border-dark" />
                                         </div>
                                     </div>
                                 </div>
@@ -33,7 +33,7 @@ const AboutUs = () => {
                                     <div className="img-content">
                                         <div className="d-flex justify-content-center align-items-center">
                                             <h3 className="position-absolute text-white">S U N D A R B A N</h3>
-                                            <img src={img3} alt="" className="img-fluid border border-2 p-2 border-dark" />
+                                            <img src={img3} alt="" className="img-fluid border-radius border border-2 p-2 border-dark" />
                                         </div>
                                     </div>
                                 </div>
@@ -41,7 +41,7 @@ const AboutUs = () => {
                                     <div className="img-content">
                                         <div className="d-flex justify-content-center align-items-center">
                                             <h3 className="position-absolute text-white">V O L A G A N J</h3>
-                                            <img src={img4} alt="" className="img-fluid border border-2 p-2 border-dark" />
+                                            <img src={img4} alt="" className="img-fluid border-radius border border-2 p-2 border-dark" />
                                         </div>
                                     </div>
                                 </div>

@@ -1,3 +1,6 @@
+#login {
+    padding-top: 10px;
+}
 .login-bg {
     background-color: rgb(225, 207, 235);
 }
@@ -8,6 +11,7 @@
 
 .login-content-sizing {
     background-color: rgb(223, 204, 233);
+    border-radius: 10px;
 }
 
 .account-switch:hover {
@@ -35,10 +39,10 @@
         width: 50%;
         margin: 0 auto;
     }
-    .login-content {
+    /* .login-content {
         position: relative;
         min-height: calc(100vh - 66px);
-    }
+    } */
     .plane-icon {
         display: block;
         position: absolute;

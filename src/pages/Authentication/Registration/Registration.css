@@ -1,3 +1,6 @@
+#registration {
+    padding-top: 10px;
+}
 .registration-bg {
     background-color: rgb(225, 207, 235);
 }
@@ -8,6 +11,7 @@
 
 .registration-content-sizing {
     background-color: rgb(223, 204, 233);
+    border-radius: 10px;
 }
 
 .account-switch:hover {
@@ -35,10 +39,10 @@
         width: 50%;
         margin: 0 auto;
     }
-    .registration-content {
+    /* .registration-content {
         position: relative;
         min-height: calc(100vh - 66px);
-    }
+    } */
     .hotel-icon {
         display: block;
         position: absolute;

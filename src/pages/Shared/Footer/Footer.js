@@ -21,8 +21,8 @@ const Footer = () => {
                         <div className="mt-4">
                             <h5>Receive Email Updates</h5>
                             <div className="d-flex">
-                                <input type="text" placeholder="Your Email Address" className="form-control footer-input-bg rounded-0" value={user?.email} />
-                                <button className="btn btn-outline-dark rounded-0">SUBMIT</button>
+                                <input type="text" placeholder="Your Email Address" className="form-control footer-input-bg border-radius" value={user?.email} />
+                                <button className="ms-2 btn btn-outline-dark border-radius">SUBMIT</button>
                             </div>
                         </div>
                         <div className="mt-5">

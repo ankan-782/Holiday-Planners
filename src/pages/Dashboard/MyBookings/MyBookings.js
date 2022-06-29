@@ -44,7 +44,7 @@ const MyBookings = () => {
 
 
     return (
-        <div className="my-bookings-bg text-dark">
+        <div id='my-bookings' className="my-bookings-bg text-dark">
             <div className="my-bookings-content d-flex justify-content-center align-items-start">
                 <div className="container-fluid p-lg-5 p-4">
                     <div className="row g-4">
@@ -61,8 +61,8 @@ const MyBookings = () => {
                                     {
                                         myBookings.map(mybooking =>
                                             <div className="col">
-                                                <div className="card my-bookings p-3 border-0 rounded-0 h-100">
-                                                    <img src={mybooking?.destinationImg} alt="" className="w-100 border border-1 border-dark" />
+                                                <div className="card my-bookings p-3 border-0 border-radius h-100">
+                                                    <img src={mybooking?.destinationImg} alt="" className="w-100 border border-1 border-radius border-dark" />
                                                     <div className="mt-3 d-flex justify-content-between align-items-center">
                                                         <p>Booking Id: <p className="booking-id">{mybooking?._id}</p></p>
                                                         {mybooking.status === 'pending' ? (<p className="status-red card-text">{mybooking?.status}</p>) : (<p className="status-green card-text">{mybooking?.status}</p>)}
@@ -72,7 +72,7 @@ const MyBookings = () => {
                                                         <p>Date to Visit: <span className="info ms-1 text-decoration-underline">Date to Visit: {mybooking?.dateToVisit}</span></p>
                                                         <p>No of tickets: <span className="info ms-1 text-decoration-underline">No of tickets: {mybooking?.numberOfTickets}</span></p>
                                                     </div>
-                                                    <button className="w-50 mt-4 btn btn-outline-danger rounded-0"><span className="button-style" onClick={() => deleteBooking(mybooking._id)}>Cancel the package</span></button>
+                                                    <button className="w-50 mt-4 btn btn-outline-danger border-radius"><span className="button-style" onClick={() => deleteBooking(mybooking._id)}>Cancel the package</span></button>
                                                 </div>
                                             </div>)
                                     }

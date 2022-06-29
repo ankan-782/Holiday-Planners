@@ -211,28 +211,28 @@ const ServiceDetailsAndBookingInfo = () => {
                             <form onSubmit={handleSubmit(onSubmit)} className="mb-5">
                                 <div className="mb-3">
                                     <label htmlFor="exampleInputName" className="form-label fs-6">Full Name</label>
-                                    <input type="text" className="form-control input-bg py-3 rounded-0" id="exampleInputName" placeholder="Name" defaultValue={user?.displayName} {...register("name")} required />
+                                    <input type="text" className="form-control input-bg py-3 border-radius" id="exampleInputName" placeholder="Name" defaultValue={user?.displayName} {...register("name")} required />
                                 </div>
                                 <div className="mb-3">
                                     <label htmlFor="exampleInputEmail" className="form-label fs-6">Email address</label>
-                                    <input type="email" className="form-control input-bg py-3 rounded-0" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="abc@pqr.xyz" defaultValue={user?.email} {...register("email")} required />
+                                    <input type="email" className="form-control input-bg py-3 border-radius" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="abc@pqr.xyz" defaultValue={user?.email} {...register("email")} required />
                                     <div id="emailHelp" className="form-text text-dark">We'll never share your email with anyone else.</div>
                                 </div>
                                 <div className="mb-3">
                                     <label htmlFor="exampleInputPhNo" className="form-label fs-6">Phone Number</label>
-                                    <input type="text" className="form-control input-bg py-3 rounded-0" id="exampleInputPhNo" placeholder="01XXXXXXXXX" {...register("phoneNo")} required />
+                                    <input type="text" className="form-control input-bg py-3 border-radius" id="exampleInputPhNo" placeholder="01XXXXXXXXX" {...register("phoneNo")} required />
                                 </div>
                                 <div className="mb-3">
                                     <label htmlFor="exampleInputNOT" className="form-label fs-6">Number of Tickets</label>
-                                    <input type="number" className="form-control input-bg py-3 rounded-0" id="exampleInputNOT" placeholder="What no. of tickets" {...register("numberOfTickets")} required />
+                                    <input type="number" className="form-control input-bg py-3 border-radius" id="exampleInputNOT" placeholder="What no. of tickets" {...register("numberOfTickets")} required />
                                 </div>
                                 <div className="mb-3">
                                     <label htmlFor="exampleInputDate" className="form-label fs-6">When To Visit</label>
-                                    <input type="date" className="form-control input-bg py-3 rounded-0" id="exampleInputDate" {...register("dateToVisit")} required />
+                                    <input type="date" className="form-control input-bg py-3 border-radius" id="exampleInputDate" {...register("dateToVisit")} required />
                                 </div>
                                 {
                                     serviceBooked.length > 0 ? (<p>Already Booked</p>) : (<div className="text-center">
-                                        <button type="submit" className="btn btn-outline-dark rounded-0 mt-4">Book this Tour Package</button>
+                                        <button type="submit" className="btn btn-outline-dark border-radius mt-4">Book this Tour Package</button>
                                     </div>)
                                 }
                             </form>

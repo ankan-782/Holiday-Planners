@@ -1,3 +1,6 @@
+#my-bookings {
+    padding-top: 66px;
+}
 .my-bookings-bg {
     background-color: rgb(242, 226, 250);
 }
@@ -42,9 +45,4 @@
 }
 .button-style:hover {
     color: white;
-}
-@media screen and (min-width: 992px){
-    .my-bookings-content{
-        min-height: calc(100vh - 66px);
-    }
 }

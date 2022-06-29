@@ -17,7 +17,7 @@ const Services = () => {
                         <span className="visually-hidden">Loading...</span>
                     </div>
                 </div>
-            </div>) : (<div className="services-bg text-dark">
+            </div>) : (<div id='services' className="services-bg text-dark">
                 <div className="services-content">
                     <div className="container p-4 px-lg-0">
                         <h5 className="mb-5 border-start border-3 ps-3 border-dark">Amazing Tours Packages</h5>

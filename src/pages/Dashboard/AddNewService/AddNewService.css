@@ -1,3 +1,6 @@
+#add-new-service {
+    padding-top: 66px;
+}
 .img-content{
     /* width: 100%; */
     position: relative;
@@ -14,11 +17,11 @@
     transition: opacity 0.5s;
 }
 
-.img-content h3 {
+.img-content h5 {
     display: none;
 }
 
-.img-content div:hover h3 {
+.img-content div:hover h5 {
     display: block;
 }
 
@@ -33,9 +36,4 @@
 }
 .border-bottom-design-add-new-service:hover {
     border-bottom: 2px solid black;
-}
-@media screen and (min-width: 992px){
-    .add-new-service-content{
-        min-height: calc(100vh - 66px);
-    }
 }

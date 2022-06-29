@@ -32,6 +32,7 @@
 .about-card {
     padding: 30px;
     background-color: rgb(237, 226, 243);
+    border-radius: 10px;
     transition: 0.5s ease-in-out;
 }
 .about-card:hover {

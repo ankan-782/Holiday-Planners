@@ -13,37 +13,28 @@ const Banner = () => {
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div className="banner-img-content">
-                        <div>
-                            <img src={img1} class="d-block w-100" alt="..." />
+                <div className="carousel-item active">
+                    <div className='slide1 min-vh-100'>
+                        <div className="carousel-caption d-none d-md-block">
+                            <h1 className="mb-5">Enjoy The Travel with <br /> <span className="banner-brand m-0">Holiday Planners</span></h1>
+                            <h5 className="lh-base w-50 mx-auto line">We Provide best holiday planning to our customers so that they can travel peacefully and they can utilize their time perfectly.</h5>
                         </div>
-                    </div>
-                    <div className="carousel-caption d-none d-md-block">
-                        <h1 className="mb-5">Enjoy The Travel with <br /> <span className="banner-brand">Holiday Planners</span></h1>
-                        <h5 className="lh-base w-50 mx-auto line">We Provide best holiday planning to our customers so that they can travel peacefully and they can utilize their time perfectly.</h5>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <div className="banner-img-content">
-                        <div>
-                            <img src={img2} class="d-block w-100" alt="..." />
+                <div className="carousel-item">
+                    <div className='slide2 min-vh-100'>
+                        <div className="carousel-caption d-none d-md-block">
+                            <h1 className="mb-5">Life is Short and <br /> <span className="banner-brand">The World is Wide</span></h1>
+                            <h5 className="lh-base w-50 mx-auto line">If you want to travel, but you’re not sure where to start, you just need to take the first step. Research places you’d like to go</h5>
                         </div>
-                    </div>
-                    <div className="carousel-caption d-none d-md-block">
-                        <h1 className="mb-5">Life is Short and <br /> <span className="banner-brand">The World is Wide</span></h1>
-                        <h5 className="lh-base w-50 mx-auto line">If you want to travel, but you’re not sure where to start, you just need to take the first step. Research places you’d like to go</h5>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <div className="banner-img-content">
-                        <div>
-                            <img src={img3} class="d-block w-100" alt="..." />
+                <div className="carousel-item">
+                    <div className='slide3 min-vh-100'>
+                        <div className="carousel-caption d-none d-md-block">
+                            <h1 className="mb-5">Get ready to Travel <br /> <span className="banner-brand">The World</span></h1>
+                            <h5 className="lh-base w-50 mx-auto line">Twenty years from now you will be more disappointed by the things you didn’t do than by the ones you did do. – Mark Twain</h5>
                         </div>
-                    </div>
-                    <div className="carousel-caption d-none d-md-block">
-                        <h1 className="mb-5">Get ready to Travel <br /> <span className="banner-brand">The World</span></h1>
-                        <h5 className="lh-base w-50 mx-auto line">Twenty years from now you will be more disappointed by the things you didn’t do than by the ones you did do. – Mark Twain</h5>
                     </div>
                 </div>
             </div>

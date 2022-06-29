@@ -48,7 +48,7 @@ const ManageAllBookings = () => {
     }
 
     return (
-        <div className="manage-all-bookings-bg text-dark">
+        <div id='manage-all-bookings' className="manage-all-bookings-bg text-dark">
             <div className="manage-all-bookings-content d-flex justify-content-center align-items-start">
                 <div className="container-fluid p-lg-5 p-4">
                     <div className="row g-4">
@@ -64,7 +64,7 @@ const ManageAllBookings = () => {
                                     {
                                         manageBookings.map(booking =>
                                             <div className="col">
-                                                <div className="card bookings p-3 border-0 rounded-0 h-100">
+                                                <div className="card bookings p-3 border-0 border-radius h-100">
                                                     <div className="row gy-3 gx-5">
                                                         <div className="col-12 col-lg-5">
                                                             <div className="mt-3">
@@ -92,8 +92,8 @@ const ManageAllBookings = () => {
                                                                     {booking.status === 'pending' ? (<small className="status-red text-center">{booking?.status}</small>) : (<small className="status-green text-center">{booking?.status}</small>)}
                                                                 </div>
                                                                 <div className="d-flex justify-content-center align-items-center">
-                                                                    {booking.status === 'pending' && <button className="btn btn-outline-success rounded-0 me-1" onClick={() => updateBookingStatus(booking._id)}><i class="fas fa-check-double fs-6 text-dark"></i></button>}
-                                                                    <button className="btn btn-outline-danger rounded-0" onClick={() => deleteBooking(booking._id)}><i class="fas fa-trash-alt fs-6 text-dark"></i></button>
+                                                                    {booking.status === 'pending' && <button className="btn btn-outline-success border-radius me-1" onClick={() => updateBookingStatus(booking._id)}><i class="fas fa-check-double fs-6 text-dark"></i></button>}
+                                                                    <button className="btn btn-outline-danger border-radius" onClick={() => deleteBooking(booking._id)}><i class="fas fa-trash-alt fs-6 text-dark"></i></button>
                                                                 </div>
                                                             </div>
                                                         </div>

@@ -48,7 +48,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="d-flex justify-content-center align-items-center">
-                            <NavLink className="btn btn-outline-dark rounded-0 my-5" to="/services">View All Packages in Services section</NavLink>
+                            <NavLink className="btn btn-outline-dark border-radius my-5" to="/services">View All Packages in Services section</NavLink>
                         </div>
                     </div>
                 </div>

@@ -7,7 +7,7 @@ const Dashboard = () => {
     const { user } = useAuth();
 
     return (
-        <div>
+        <div id='dashboard'>
             <div className="dashboard-bg text-dark">
                 <div className="dashboard-content d-flex justify-content-center align-items-start">
                     <div className="container-fluid p-lg-5 p-4">

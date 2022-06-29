@@ -14,13 +14,14 @@ import AddNewServices from './pages/Dashboard/AddNewService/AddNewService';
 import Login from './pages/Authentication/Login/Login';
 import Registration from './pages/Authentication/Registration/Registration';
 import NotFound from './pages/NotFound/NotFound';
-
+import EveryPageScrollToTop from './WindowScroll/EveryPageScrollToTop/EveryPageScrollToTop'
 
 function App() {
   return (
     <div>
       <AuthProvider>
         <Router>
+          <EveryPageScrollToTop></EveryPageScrollToTop>
           <Header></Header>
           <Switch>
             <Route exact path="/">

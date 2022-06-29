@@ -7,8 +7,8 @@ const Service = ({ service }) => {
     const { _id, destinationImg, destination, short_description, price, duration, groupSize } = service;
     return (
         <div className="col">
-            <div className="card service border-0 rounded-0 h-100">
-                <img src={destinationImg} className="card-img-top rounded-0" alt="..." />
+            <div className="card service border-0 border-radius h-100">
+                <img src={destinationImg} className="card-img-top border-radius" alt="..." />
                 <div className="destination-name">
                     <h5 className="card-title text-center fw-bold m-0 py-2 text-white">{destination}</h5>
                 </div>
@@ -32,7 +32,7 @@ const Service = ({ service }) => {
                         <h4 className="m-0">${price}</h4>
                         <p className="ms-1 text-black opacity-75">per person</p>
                     </div>
-                    <NavLink to={`/serviceDetails/${_id}`}><button className="btn btn-outline-dark rounded-0">Book Now</button></NavLink>
+                    <NavLink to={`/serviceDetails/${_id}`}><button className="btn btn-outline-dark border-radius">Book Now</button></NavLink>
                 </div>
             </div>
         </div>

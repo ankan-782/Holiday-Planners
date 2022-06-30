@@ -1,7 +1,6 @@
-.private-route-content {
+.login-route-content{
     min-height: 100vh;
 }
-
-.private-route-bg {
+.login-route-bg {
     background-color: rgb(242, 226, 250);
 }

@@ -15,6 +15,7 @@ import Login from './pages/Authentication/Login/Login';
 import Registration from './pages/Authentication/Registration/Registration';
 import NotFound from './pages/NotFound/NotFound';
 import EveryPageScrollToTop from './WindowScroll/EveryPageScrollToTop/EveryPageScrollToTop'
+import LoginRoute from './pages/Authentication/LoginRoute/LoginRoute';
 
 function App() {
   return (
@@ -48,12 +49,12 @@ function App() {
             <PrivateRoute path="/addNewService">
               <AddNewServices></AddNewServices>
             </PrivateRoute>
-            <Route path="/login">
+            <LoginRoute path="/login">
               <Login></Login>
-            </Route>
-            <Route path="/register">
+            </LoginRoute>
+            <LoginRoute path="/register">
               <Registration></Registration>
-            </Route>
+            </LoginRoute>
             <Route path="*">
               <NotFound></NotFound>
             </Route>

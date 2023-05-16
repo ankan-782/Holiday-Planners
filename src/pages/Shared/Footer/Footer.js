@@ -13,7 +13,7 @@ const Footer = () => {
                     <div className="col-12 col-lg-4">
                         <NavLink className="navbar-brand text-dark" to="/home">
                             <div className="d-flex align-items-center">
-                                <i class="fas fa-suitcase-rolling fs-1 me-3"></i>
+                                <i className="fas fa-suitcase-rolling fs-1 me-3"></i>
                                 <h5 className="footer-brand m-0 pt-1">Holiday Planners</h5>
                             </div>
                         </NavLink>
@@ -26,10 +26,10 @@ const Footer = () => {
                             </div>
                         </div>
                         <div className="mt-5">
-                            <i class="fs-1 me-2 fab fa-cc-paypal"></i>
-                            <i class="fs-1 me-2 fab fa-cc-visa"></i>
-                            <i class="fs-1 me-2 fab fa-cc-mastercard"></i>
-                            <i class="fs-1 me-2 fab fa-cc-amex"></i>
+                            <i className="fs-1 me-2 fab fa-cc-paypal"></i>
+                            <i className="fs-1 me-2 fab fa-cc-visa"></i>
+                            <i className="fs-1 me-2 fab fa-cc-mastercard"></i>
+                            <i className="fs-1 me-2 fab fa-cc-amex"></i>
                         </div>
                     </div>
                     <div className="col-12 col-lg-4">

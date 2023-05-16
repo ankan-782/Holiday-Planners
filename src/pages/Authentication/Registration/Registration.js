@@ -60,7 +60,7 @@ const Registration = () => {
     return (
         <div id='registration' className="registration-bg text-dark">
             <div className="registration-content d-flex justify-content-center align-items-center align-items-lg-start p-lg-5">
-                <i class="fas fa-hotel hotel-icon"></i>
+                <i className="fas fa-hotel hotel-icon"></i>
                 <div className="container p-3">
                     <div className="registration-content-sizing">
                         <div className="d-flex justify-content-between mb-5">

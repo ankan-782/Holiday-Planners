@@ -1,11 +1,11 @@
 import React from 'react';
-import Banner from '../Banner/Banner';
-import OurPartners from '../OurPartners/OurPartners';
-import AboutUs from '../AboutUs/AboutUs';
-import useServicesInfo from '../../../hooks/useServicesInfo';
-import ServicesInHome from '../ServicesInHome/ServicesInHome';
 import { NavLink } from 'react-router-dom';
+import useServicesInfo from '../../../hooks/useServicesInfo';
+import AboutUs from '../AboutUs/AboutUs';
+import Banner from '../Banner/Banner';
 import Gallery from '../Gallery/Gallery';
+import OurPartners from '../OurPartners/OurPartners';
+import ServicesInHome from '../ServicesInHome/ServicesInHome';
 import './Home.css';
 
 
@@ -44,7 +44,7 @@ const Home = () => {
                                 // but I can do the slice method to show 6 services. but for requirement purpose i commented those lines above.
                             }
                             <div className="d-flex justify-content-center align-items-center">
-                                <NavLink to="/addNewService" className="plus-text"><i class="far fa-plus-square plus-icon"></i></NavLink>
+                                <NavLink to="/addNewService" className="plus-text"><i className="far fa-plus-square plus-icon"></i></NavLink>
                             </div>
                         </div>
                         <div className="d-flex justify-content-center align-items-center">

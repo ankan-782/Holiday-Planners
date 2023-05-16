@@ -53,7 +53,7 @@ const Login = () => {
     return (
         <div id='login' className="login-bg text-dark">
             <div className="login-content d-flex justify-content-center align-items-center align-items-lg-start pt-lg-5">
-                <i class="fas fa-plane-departure plane-icon"></i>
+                <i className="fas fa-plane-departure plane-icon"></i>
                 <div className="container p-3">
                     <div className="login-content-sizing">
                         <div className="d-flex justify-content-between mb-5">

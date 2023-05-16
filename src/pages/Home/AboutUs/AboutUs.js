@@ -1,9 +1,9 @@
 import React from 'react';
-import './AboutUs.css';
 import img1 from '../../../images/about/cox1.jpg';
 import img2 from '../../../images/about/guliakhali1.jpg';
 import img3 from '../../../images/about/sundor4.jpg';
 import img4 from '../../../images/about/vola3.jpg';
+import './AboutUs.css';
 
 const AboutUs = () => {
     return (
@@ -54,28 +54,28 @@ const AboutUs = () => {
                         <div className="mt-5 row g-3">
                             <div className="col-12 col-md-6 col-lg-3">
                                 <div className="text-center about-card h-100">
-                                    <i class="fas fa-bus fs-2 mb-3"></i>
+                                    <i className="fas fa-bus fs-2 mb-3"></i>
                                     <h6 className="fw-bold text-dark text-uppercase">Private Transport</h6>
                                     <p>Clean and Airy</p>
                                 </div>
                             </div>
                             <div className="col-12 col-md-6 col-lg-3">
                                 <div className="text-center about-card h-100">
-                                    <i class="fas fa-globe fs-2 mb-3"></i>
+                                    <i className="fas fa-globe fs-2 mb-3"></i>
                                     <h6 className="fw-bold text-dark text-uppercase">Diverse Destinations</h6>
                                     <p>Every Level</p>
                                 </div>
                             </div>
                             <div className="col-12 col-md-6 col-lg-3">
                                 <div className="text-center about-card h-100">
-                                    <i class="fas fa-hotel fs-2 mb-3"></i>
+                                    <i className="fas fa-hotel fs-2 mb-3"></i>
                                     <h6 className="fw-bold text-dark text-uppercase">Great Hotels</h6>
                                     <p>Affordable</p>
                                 </div>
                             </div>
                             <div className="col-12 col-md-6 col-lg-3">
                                 <div className="text-center about-card h-100">
-                                    <i class="fas fa-user-check fs-2 mb-3"></i>
+                                    <i className="fas fa-user-check fs-2 mb-3"></i>
                                     <h6 className="fw-bold text-dark text-uppercase">Fast Booking</h6>
                                     <p>All Services</p>
                                 </div>

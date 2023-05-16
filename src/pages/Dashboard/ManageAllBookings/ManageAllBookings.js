@@ -10,7 +10,7 @@ const ManageAllBookings = () => {
     const [updated, setUpdated] = useState(false);
 
     useEffect(() => {
-        fetch('https://safe-lowlands-06781.herokuapp.com/bookings')
+        fetch('https://holiday-planner-server-side.onrender.com/bookings')
             .then(res => res.json())
             .then(data => setManageBookings(data));
     }, [updated]);
@@ -18,7 +18,7 @@ const ManageAllBookings = () => {
     const deleteBooking = (id) => {
         const proceed = window.confirm('Are you sure, you want to delete?');
         if (proceed) {
-            fetch(`https://safe-lowlands-06781.herokuapp.com/bookings/${id}`, {
+            fetch(`https://holiday-planner-server-side.onrender.com/bookings/${id}`, {
                 method: "DELETE",
             })
                 .then(res => res.json())
@@ -33,7 +33,7 @@ const ManageAllBookings = () => {
     }
 
     const updateBookingStatus = (id) => {
-        fetch(`https://safe-lowlands-06781.herokuapp.com/bookings/${id}`, {
+        fetch(`https://holiday-planner-server-side.onrender.com/bookings/${id}`, {
             method: "PUT",
             headers: {
                 'content-type': 'application/json'
@@ -53,9 +53,9 @@ const ManageAllBookings = () => {
                 <div className="container-fluid p-lg-5 p-4">
                     <div className="row g-4">
                         <div className="col-12 col-lg-2">
-                            <NavLink activeStyle={{ fontWeight: "bold" }} className="nav-link text-black border-bottom-design-manage-all-bookings me-3" to="/myBookings"><i class="fas fa-check-circle me-2"></i>My bookings</NavLink>
-                            <NavLink activeStyle={{ fontWeight: "bold" }} className="nav-link text-black border-bottom-design-manage-all-bookings me-3" to="/manageAllBookings"><i class="fas fa-tasks me-2"></i>Manage All Bookings</NavLink>
-                            <NavLink activeStyle={{ fontWeight: "bold" }} className="nav-link text-black border-bottom-design-manage-all-bookings me-3" to="/addNewService"><i class="fas fa-plus me-2"></i>Add New Service</NavLink>
+                            <NavLink activeStyle={{ fontWeight: "bold" }} className="nav-link text-black border-bottom-design-manage-all-bookings me-3" to="/myBookings"><i className="fas fa-check-circle me-2"></i>My bookings</NavLink>
+                            <NavLink activeStyle={{ fontWeight: "bold" }} className="nav-link text-black border-bottom-design-manage-all-bookings me-3" to="/manageAllBookings"><i className="fas fa-tasks me-2"></i>Manage All Bookings</NavLink>
+                            <NavLink activeStyle={{ fontWeight: "bold" }} className="nav-link text-black border-bottom-design-manage-all-bookings me-3" to="/addNewService"><i className="fas fa-plus me-2"></i>Add New Service</NavLink>
                         </div>
                         <div className="col-12 col-lg-10">
                             <div className="ms-lg-5">
@@ -92,8 +92,8 @@ const ManageAllBookings = () => {
                                                                     {booking.status === 'pending' ? (<small className="status-red text-center">{booking?.status}</small>) : (<small className="status-green text-center">{booking?.status}</small>)}
                                                                 </div>
                                                                 <div className="d-flex justify-content-center align-items-center">
-                                                                    {booking.status === 'pending' && <button className="btn btn-outline-success border-radius me-1" onClick={() => updateBookingStatus(booking._id)}><i class="fas fa-check-double fs-6 text-dark"></i></button>}
-                                                                    <button className="btn btn-outline-danger border-radius" onClick={() => deleteBooking(booking._id)}><i class="fas fa-trash-alt fs-6 text-dark"></i></button>
+                                                                    {booking.status === 'pending' && <button className="btn btn-outline-success border-radius me-1" onClick={() => updateBookingStatus(booking._id)}><i className="fas fa-check-double fs-6 text-dark"></i></button>}
+                                                                    <button className="btn btn-outline-danger border-radius" onClick={() => deleteBooking(booking._id)}><i className="fas fa-trash-alt fs-6 text-dark"></i></button>
                                                                 </div>
                                                             </div>
                                                         </div>

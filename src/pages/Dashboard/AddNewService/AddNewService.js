@@ -17,7 +17,7 @@ const AddNewServices = () => {
     const onSubmit = data => {
 
         console.log(data);
-        fetch('https://safe-lowlands-06781.herokuapp.com/services', {
+        fetch('https://holiday-planner-server-side.onrender.com/services', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -40,9 +40,9 @@ const AddNewServices = () => {
                 <div className="container-fluid p-lg-5 p-4">
                     <div className="row g-5">
                         <div className="col-12 col-lg-2">
-                            <NavLink activeStyle={{ fontWeight: "bold" }} className="nav-link text-black border-bottom-design-add-new-service me-3" to="/myBookings"><i class="fas fa-check-circle me-2"></i>My bookings</NavLink>
-                            <NavLink activeStyle={{ fontWeight: "bold" }} className="nav-link text-black border-bottom-design-add-new-service me-3" to="/manageAllBookings"><i class="fas fa-tasks me-2"></i>Manage All Bookings</NavLink>
-                            <NavLink activeStyle={{ fontWeight: "bold" }} className="nav-link text-black border-bottom-design-add-new-service me-3" to="/addNewService"><i class="fas fa-plus me-2"></i>Add New Service</NavLink>
+                            <NavLink activeStyle={{ fontWeight: "bold" }} className="nav-link text-black border-bottom-design-add-new-service me-3" to="/myBookings"><i className="fas fa-check-circle me-2"></i>My bookings</NavLink>
+                            <NavLink activeStyle={{ fontWeight: "bold" }} className="nav-link text-black border-bottom-design-add-new-service me-3" to="/manageAllBookings"><i className="fas fa-tasks me-2"></i>Manage All Bookings</NavLink>
+                            <NavLink activeStyle={{ fontWeight: "bold" }} className="nav-link text-black border-bottom-design-add-new-service me-3" to="/addNewService"><i className="fas fa-plus me-2"></i>Add New Service</NavLink>
                         </div>
                         <div className="col-12 col-lg-6">
                             <div className="ms-lg-5">

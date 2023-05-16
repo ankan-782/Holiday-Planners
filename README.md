@@ -1,7 +1,7 @@
 
 # Holiday-Planners -- a travel agency that can be used to travel many places in Bangladesh
 ## Here is the Client side live site link: [Link](https://holiday-planner-bac0a.web.app/)
-## Here is the Server side live link: [Link](https://safe-lowlands-06781.herokuapp.com/)
+## Here is the Server side live link: [Link](https://holiday-planner-server-side.onrender.com/)
 
 ### Project features:
 

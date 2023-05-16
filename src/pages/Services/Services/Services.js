@@ -29,7 +29,7 @@ const Services = () => {
                                 ></Service>)
                             }
                             <div className="d-flex justify-content-center align-items-center">
-                                <NavLink to="/addNewService" className="plus-text"><i class="far fa-plus-square plus-icon"></i></NavLink>
+                                <NavLink to="/addNewService" className="plus-text"><i className="far fa-plus-square plus-icon"></i></NavLink>
                             </div>
                         </div>
                     </div>

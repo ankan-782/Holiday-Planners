@@ -12,14 +12,14 @@ const ServiceDetailsAndBookingInfo = () => {
     const [alreadyBooked, setAlreadyBooked] = useState(false);
 
     useEffect(() => {
-        fetch('https://safe-lowlands-06781.herokuapp.com/bookings')
+        fetch('https://holiday-planner-server-side.onrender.com/bookings')
             .then(res => res.json())
             .then(data => setManageBookings(data));
     }, [alreadyBooked]);
 
 
     useEffect(() => {
-        fetch(`https://safe-lowlands-06781.herokuapp.com/services/${singleServiceID}`)
+        fetch(`https://holiday-planner-server-side.onrender.com/services/${singleServiceID}`)
             .then(res => res.json())
             .then(data => setSingleService(data));
     }, [])
@@ -37,7 +37,7 @@ const ServiceDetailsAndBookingInfo = () => {
         data.price = price;
         data.status = 'pending';
 
-        fetch('https://safe-lowlands-06781.herokuapp.com/bookings', {
+        fetch('https://holiday-planner-server-side.onrender.com/bookings', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -58,16 +58,16 @@ const ServiceDetailsAndBookingInfo = () => {
         <div className="single-service-details-bg text-dark">
             <div className="single-service-details-content">
                 <div className="container p-4 px-lg-0">
-                    <h4 className="mb-4 border-start border-3 ps-3 border-dark">Booking Information</h4>
+                    <h4 className="my-4 border-start border-3 ps-3 border-dark">Booking Information</h4>
                     <div className="row g-5">
                         <div className="col-12 col-lg-8">
                             <div className="mb-5 single-service-details-img-content">
                                 <div className="p-3 border border-3 border-dark d-flex justify-content-center align-items-center">
                                     <h1 className="position-absolute text-white destination-name-in-booking-page">{destination}</h1>
-                                    <img src={destinationImg} className="w-100 border border-1 border-dark" alt="" />
+                                    <img src={destinationImg} className="w-100 border border-1 border-dark border-radius" alt="" />
                                 </div>
                             </div>
-                            <div className="card-body p-4 p-lg-5 destination-info">
+                            <div className="card-body p-4 p-lg-5 destination-info border-radius">
                                 <div className="mb-4 row g-3 g-lg-5">
                                     <div className="col-12 col-md-10">
                                         <h3 className="">{short_description}</h3>
@@ -80,34 +80,34 @@ const ServiceDetailsAndBookingInfo = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="mb-5 d-flex justify-content-around align-items-center small-info">
+                                <div className="mb-5 d-flex justify-content-around align-items-center small-info border-radius">
                                     <div className="text-center">
-                                        <h4><i class="far fa-clock"></i></h4>
+                                        <h4><i className="far fa-clock"></i></h4>
                                         <p className="text-black">{duration} days</p>
                                     </div>
                                     <div className="text-center">
-                                        <h4><i class="fas fa-users"></i></h4>
+                                        <h4><i className="fas fa-users"></i></h4>
                                         <p className="text-black">{groupSize}+ peoples</p>
                                     </div>
                                     <div className="text-center">
-                                        <h4><i class="fas fa-map-marker-alt"></i></h4>
+                                        <h4><i className="fas fa-map-marker-alt"></i></h4>
                                         <p className="text-black">{destination}</p>
                                     </div>
                                 </div>
-                                <div className="mb-5 hotel-info">
+                                <div className="mb-5 hotel-info border-radius">
                                     <h4 className="mb-4 border-start border-3 ps-3 border-dark">Hotel Information</h4>
                                     <div className="row g-2">
                                         <div className="col-12 col-md-4">
-                                            <img src={hotelImg} className="w-100 border border-2 p-1 border-dark" alt="" />
+                                            <img src={hotelImg} className="w-100 border border-2 border-radius p-1 border-dark" alt="" />
                                         </div>
                                         <div className="col-12 col-md-8">
                                             <div className="card-body">
                                                 <h4 className="mb-3 text-center text-lg-start">{hotelName}</h4>
-                                                <div className="social-info">
+                                                <div className="social-info border-radius">
                                                     <p className="border-start border-3 ps-2 border-dark text-start">Social Information</p>
                                                     <div className="mt-1 d-flex">
                                                         <button className="btn"><i className="fab fa-facebook-f fs-5 text-dark"></i></button>
-                                                        <button className="btn"><i class="fab fa-instagram fs-5 text-dark"></i></button>
+                                                        <button className="btn"><i className="fab fa-instagram fs-5 text-dark"></i></button>
                                                         <button className="btn"><i className="fab fa-twitter fs-5 text-dark"></i></button>
                                                     </div>
                                                 </div>
@@ -115,35 +115,35 @@ const ServiceDetailsAndBookingInfo = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="tourist-place-info">
+                                <div className="tourist-place-info border-radius">
                                     <div className="row g-2">
                                         <div className="col-12 col-lg-6">
                                             <h4 className="mb-4 border-start border-3 ps-3 border-dark">Tourist Spot Top Attractions</h4>
                                             <div className="ms-3">
                                                 <div className="fs-5 mb-1">
-                                                    <i class="fas fa-caret-square-right me-2"></i>
+                                                    <i className="fas fa-caret-square-right me-2"></i>
                                                     <span>{spotNoOne}</span>
                                                 </div>
                                                 <div className="fs-5 mb-1">
-                                                    <i class="fas fa-caret-square-right me-2"></i>
+                                                    <i className="fas fa-caret-square-right me-2"></i>
                                                     <span>{spotNoTwo}</span>
                                                 </div>
                                                 <div className="fs-5 mb-1">
-                                                    <i class="fas fa-caret-square-right me-2"></i>
+                                                    <i className="fas fa-caret-square-right me-2"></i>
                                                     <span>{spotNoThree}</span>
                                                 </div>
                                                 <div className="fs-5 mb-1">
-                                                    <i class="fas fa-caret-square-right me-2"></i>
+                                                    <i className="fas fa-caret-square-right me-2"></i>
                                                     <span>{spotNoFour}</span>
                                                 </div>
                                                 <div className="fs-5 mb-1">
-                                                    <i class="fas fa-caret-square-right me-2"></i>
+                                                    <i className="fas fa-caret-square-right me-2"></i>
                                                     <span>{spotNoFive}</span>
                                                 </div>
                                             </div>
                                         </div>
                                         <div className="col-12 col-lg-6">
-                                            <table class="table border border-1 border-dark">
+                                            <table className="table border border-1 border-dark">
                                                 <tbody>
                                                     <tr>
                                                         <th scope="row" className="border-end border-1 border-dark">Destination</th>
@@ -165,19 +165,19 @@ const ServiceDetailsAndBookingInfo = () => {
                                                         <th scope="row" className="border-end border-1 border-dark">Price Included</th>
                                                         <td>
                                                             <div className="mb-1">
-                                                                <i class="fas fa-angle-double-right me-2"></i>
+                                                                <i className="fas fa-angle-double-right me-2"></i>
                                                                 <span>5 Star Accommodation</span>
                                                             </div>
                                                             <div className="mb-1">
-                                                                <i class="fas fa-angle-double-right me-2"></i>
+                                                                <i className="fas fa-angle-double-right me-2"></i>
                                                                 <span>Air fases</span>
                                                             </div>
                                                             <div className="mb-1">
-                                                                <i class="fas fa-angle-double-right me-2"></i>
+                                                                <i className="fas fa-angle-double-right me-2"></i>
                                                                 <span>3 Nights Hotel Accomodation</span>
                                                             </div>
                                                             <div className="mb-1">
-                                                                <i class="fas fa-angle-double-right me-2"></i>
+                                                                <i className="fas fa-angle-double-right me-2"></i>
                                                                 <span>All transportation in destination location</span>
                                                             </div>
                                                         </td>
@@ -186,15 +186,15 @@ const ServiceDetailsAndBookingInfo = () => {
                                                         <th scope="row" className="border-end border-1 border-dark">Price Not Included</th>
                                                         <td>
                                                             <div className="mb-1">
-                                                                <i class="fas fa-times me-2"></i>
+                                                                <i className="fas fa-times me-2"></i>
                                                                 <span>Guide Service Fee</span>
                                                             </div>
                                                             <div className="mb-1">
-                                                                <i class="fas fa-times me-2"></i>
+                                                                <i className="fas fa-times me-2"></i>
                                                                 <span>Any Private Expenses</span>
                                                             </div>
                                                             <div className="mb-1">
-                                                                <i class="fas fa-times me-2"></i>
+                                                                <i className="fas fa-times me-2"></i>
                                                                 <span>Room Service Fees</span>
                                                             </div>
                                                         </td>
@@ -236,35 +236,35 @@ const ServiceDetailsAndBookingInfo = () => {
                                     </div>)
                                 }
                             </form>
-                            <div className="why-book-with-us-info mb-5">
+                            <div className="why-book-with-us-info mb-5 border-radius">
                                 <h4 className="mb-3 border-start border-3 ps-3 border-dark text-uppercase">Why Book with Us?</h4>
                                 <div className="ms-2">
                                     <div className="mb-1">
-                                        <i class="fas fa-angle-double-right me-2"></i>
+                                        <i className="fas fa-angle-double-right me-2"></i>
                                         <span>5 Star Accommodation</span>
                                     </div>
                                     <div className="mb-1">
-                                        <i class="fas fa-angle-double-right me-2"></i>
+                                        <i className="fas fa-angle-double-right me-2"></i>
                                         <span>Air fases</span>
                                     </div>
                                     <div className="mb-1">
-                                        <i class="fas fa-angle-double-right me-2"></i>
+                                        <i className="fas fa-angle-double-right me-2"></i>
                                         <span>3 Nights Hotel Accomodation</span>
                                     </div>
                                     <div className="mb-1">
-                                        <i class="fas fa-angle-double-right me-2"></i>
+                                        <i className="fas fa-angle-double-right me-2"></i>
                                         <span>All transportation in destination location</span>
                                     </div>
                                 </div>
                             </div>
-                            <div className="FAQ-info">
+                            <div className="FAQ-info border-radius">
                                 <h4 className="mb-3 border-start border-3 ps-3 border-dark text-uppercase">Get a question?</h4>
                                 <p className="mb-3">Do not hesitage to give us a call. We are an expert team and we are happy to talk to you.</p>
                                 <div className="border-start border-2 border-dark ps-3 mb-4">
-                                    <p className="fs-5"><i class="fas fa-phone-alt me-2"></i>01636456927</p>
+                                    <p className="fs-5"><i className="fas fa-phone-alt me-2"></i>01636456927</p>
                                 </div>
                                 <div className="border-start border-2 border-dark ps-3 mb-4">
-                                    <p className="fs-5"><i class="far fa-envelope me-2"></i>royavijit782@gmail.com</p>
+                                    <p className="fs-5"><i className="far fa-envelope me-2"></i>royavijit782@gmail.com</p>
                                 </div>
                             </div>
                         </div>

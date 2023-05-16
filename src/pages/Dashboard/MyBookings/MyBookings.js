@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 import notFound from '../../../images/notFound/not.png';
@@ -11,7 +11,7 @@ const MyBookings = () => {
     // const [toggleNotFoundImg, setToggleNotFoundImg] = useState(false);
 
     useEffect(() => {
-        fetch('https://safe-lowlands-06781.herokuapp.com/bookings')
+        fetch('https://holiday-planner-server-side.onrender.com/bookings')
             .then(res => res.json())
             .then(data => setMyBookingsInfo(data));
     }, []);
@@ -28,7 +28,7 @@ const MyBookings = () => {
     const deleteBooking = (id) => {
         const proceed = window.confirm('Are you sure, you want to delete?');
         if (proceed) {
-            fetch(`https://safe-lowlands-06781.herokuapp.com/bookings/${id}`, {
+            fetch(`https://holiday-planner-server-side.onrender.com/bookings/${id}`, {
                 method: "DELETE",
             })
                 .then(res => res.json())
@@ -49,9 +49,9 @@ const MyBookings = () => {
                 <div className="container-fluid p-lg-5 p-4">
                     <div className="row g-4">
                         <div className="col-12 col-lg-2">
-                            <NavLink activeStyle={{ fontWeight: "bold" }} className="nav-link text-black border-bottom-design-my-bookings me-3" to="/myBookings"><i class="fas fa-check-circle me-2"></i>My bookings</NavLink>
-                            <NavLink activeStyle={{ fontWeight: "bold" }} className="nav-link text-black border-bottom-design-my-bookings me-3" to="/manageAllBookings"><i class="fas fa-tasks me-2"></i>Manage All Bookings</NavLink>
-                            <NavLink activeStyle={{ fontWeight: "bold" }} className="nav-link text-black border-bottom-design-my-bookings me-3" to="/addNewService"><i class="fas fa-plus me-2"></i>Add New Service</NavLink>
+                            <NavLink activeStyle={{ fontWeight: "bold" }} className="nav-link text-black border-bottom-design-my-bookings me-3" to="/myBookings"><i className="fas fa-check-circle me-2"></i>My bookings</NavLink>
+                            <NavLink activeStyle={{ fontWeight: "bold" }} className="nav-link text-black border-bottom-design-my-bookings me-3" to="/manageAllBookings"><i className="fas fa-tasks me-2"></i>Manage All Bookings</NavLink>
+                            <NavLink activeStyle={{ fontWeight: "bold" }} className="nav-link text-black border-bottom-design-my-bookings me-3" to="/addNewService"><i className="fas fa-plus me-2"></i>Add New Service</NavLink>
                         </div>
                         <div className="col-12 col-lg-10">
                             <div className="ms-lg-5">

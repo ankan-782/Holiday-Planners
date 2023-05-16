@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
-import logo from '../../../images/brand/suitcase-rolling-solid.svg';
 import avatar from '../../../images/avatar/avatar.jpg';
+import logo from '../../../images/brand/suitcase-rolling-solid.svg';
 import './Header.css';
 
 const Header = () => {
@@ -49,15 +49,15 @@ const Header = () => {
                     <div className="ms-auto d-flex justify-content-center align-items-center">
                         <div className="nav-item ms-lg-4">
                             {user?.email ? <div className="d-flex justify-content-between align-items-center">
-                                <button onClick={logOut} className="btn btn-outline-dark border-radius me-3"><p><i class="fas fa-sign-out-alt me-2"></i>Log Out</p></button>
+                                <button onClick={logOut} className="btn btn-outline-dark border-radius me-3"><p><i className="fas fa-sign-out-alt me-2"></i>Log Out</p></button>
                                 <div className="">
                                     <NavLink to="/profile">{user?.email && user?.photoURL ? <img src={user?.photoURL} className="user-img" alt="" /> : <img src={avatar} title="User not logged in" alt="" className="user-img" />}</NavLink>
                                     {user?.email && <span className="nav-text ms-3 text-uppercase">{user?.displayName}</span>}
                                 </div>
                             </div>
                                 : <div>
-                                    <NavLink to="/login"><button className="btn btn-outline-dark border-radius me-3"><p><i class="fas fa-sign-in-alt me-2"></i>Log In</p></button></NavLink>
-                                    <NavLink to="/register"><button className="btn btn-outline-dark border-radius"><p><i class="fas fa-sign-in-alt me-2"></i>Register</p></button></NavLink>
+                                    <NavLink to="/login"><button className="btn btn-outline-dark border-radius me-3"><p><i className="fas fa-sign-in-alt me-2"></i>Log In</p></button></NavLink>
+                                    <NavLink to="/register"><button className="btn btn-outline-dark border-radius"><p><i className="fas fa-sign-in-alt me-2"></i>Register</p></button></NavLink>
                                 </div>}
                         </div>
                     </div>

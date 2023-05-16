@@ -24,7 +24,7 @@ const useFirebase = () => {
             }
             setIsLoading(false);
         });
-    }, []);
+    }, [auth]);
 
 
 
@@ -38,8 +38,11 @@ const useFirebase = () => {
     // Sign up or Registration
     const processRegistration = (email, password) => {
         if (!/(?=.*[A-Z])(?=.*[0-9])(?=.*[a-z]).{6}/.test(password)) {
-            setError('Password should be at least of 6 characters and must have at least one uppercase letter, one digits, one lowercase letter');
-            return;
+            return new Promise((resolve, reject) =>  {
+                reject({
+                    message: 'Password should be at least of 6 characters and must have at least one uppercase letter, one digits, one lowercase letter'
+                })
+            });
         }
         return createUserWithEmailAndPassword(auth, email, password)
     }

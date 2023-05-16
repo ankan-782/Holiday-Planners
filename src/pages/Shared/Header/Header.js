@@ -20,7 +20,6 @@ const Header = () => {
         prevScrollpos = currentScrollPos;
     }
 
-
     return (
         <nav id='navbar' className="navbar fixed-top navbar-expand-lg navbar-light navbar-bg">
             <div className="container-fluid px-lg-5">
@@ -52,7 +51,7 @@ const Header = () => {
                                 <button onClick={logOut} className="btn btn-outline-dark border-radius me-3"><p><i className="fas fa-sign-out-alt me-2"></i>Log Out</p></button>
                                 <div className="">
                                     <NavLink to="/profile">{user?.email && user?.photoURL ? <img src={user?.photoURL} className="user-img" alt="" /> : <img src={avatar} title="User not logged in" alt="" className="user-img" />}</NavLink>
-                                    {user?.email && <span className="nav-text ms-3 text-uppercase">{user?.displayName}</span>}
+                                    <span className="nav-text ms-3 text-uppercase">{user?.displayName}</span>
                                 </div>
                             </div>
                                 : <div>

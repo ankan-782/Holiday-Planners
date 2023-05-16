@@ -22,14 +22,14 @@ const ServiceDetailsAndBookingInfo = () => {
         fetch(`https://holiday-planner-server-side.onrender.com/services/${singleServiceID}`)
             .then(res => res.json())
             .then(data => setSingleService(data));
-    }, [])
+    }, [singleServiceID])
 
     const { _id, destinationImg, destination, short_description, price, duration, hotelName, hotelImg, groupSize, spotNoOne, spotNoTwo, spotNoThree, spotNoFour, spotNoFive } = singleService;
 
     const serviceBooked = (manageBookings.filter(bookings => bookings.bookingID === _id)).filter(email => email.email === user.email);
 
 
-    const { register, handleSubmit, reset, formState: { errors } } = useForm();
+    const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
         data.destinationImg = destinationImg;
         data.bookingID = _id;

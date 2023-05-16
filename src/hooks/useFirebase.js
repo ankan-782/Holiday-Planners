@@ -1,5 +1,5 @@
+import { GoogleAuthProvider, createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 import { useEffect, useState } from 'react';
-import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged, signInWithEmailAndPassword, createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import initializeAuthentication from '../pages/Authentication/Firebase/firebase.init';
 
 // calling the initial authentication as initAuthentication function to run the authentication related firebase code
@@ -17,6 +17,8 @@ const useFirebase = () => {
     useEffect(() => {
         onAuthStateChanged(auth, (user) => {
             if (user) {
+                setError("");
+                console.log("hello ankan", user);
                 setUser(user);
             }
             else {
@@ -38,7 +40,7 @@ const useFirebase = () => {
     // Sign up or Registration
     const processRegistration = (email, password) => {
         if (!/(?=.*[A-Z])(?=.*[0-9])(?=.*[a-z]).{6}/.test(password)) {
-            return new Promise((resolve, reject) =>  {
+            return new Promise((resolve, reject) => {
                 reject({
                     message: 'Password should be at least of 6 characters and must have at least one uppercase letter, one digits, one lowercase letter'
                 })
@@ -68,19 +70,8 @@ const useFirebase = () => {
 
 
     const setUserDetails = (name) => {
-        updateProfile(auth.currentUser, { displayName: name })
-            .then(result => {
-                // window.location.reload();
-                setUser(result.user);
-            })
-            .catch(error => {
-                setError(error.message);
-            })
+        return updateProfile(auth.currentUser, { displayName: name })
     }
-
-
-
-
 
 
 

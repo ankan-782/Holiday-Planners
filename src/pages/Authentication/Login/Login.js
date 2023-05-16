@@ -5,11 +5,10 @@ import useAuth from '../../../hooks/useAuth';
 import './Login.css';
 
 const Login = () => {
-    const { setUser, signInUsingGoogle, processLogin, setIsLoading } = useAuth();
+    const { setUser, signInUsingGoogle, processLogin, setIsLoading, error, setError } = useAuth();
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [error, setError] = useState('');
 
     const location = useLocation();
     const history = useHistory();
@@ -40,12 +39,16 @@ const Login = () => {
         setIsLoading(true);
         processLogin(email, password)
             .then(result => {
-                setUser(result.user);
-                history.push(redirect_url);
                 setError("");
+                history.push(redirect_url);
             })
             .catch((error) => {
-                setError(error.message);
+                if(error.code === 'auth/user-not-found'){
+                    setError("This user is not signed in before");
+                } else if(error.code === 'auth/wrong-password'){
+                    setError("You have typed wrong password");
+                }
+                console.log(error.code);
             })
             .finally(() => setIsLoading(false));
     }
@@ -73,7 +76,7 @@ const Login = () => {
                                     Your password must be at least 6 characters long, contain at least one uppercase letter and at least a number.
                                 </div>
                             </div>
-                            <div className="text-danger">{error}</div>
+                            <div className="text-danger mb-3">{error}</div>
                             <div className="text-center">
                                 <button type="submit" className="btn btn-outline-dark border-radius mb-3">Login</button>
                                 <p>New User? <NavLink className="text-decoration-none text-dark account-switch ms-2" to="/register">Create Account</NavLink></p>

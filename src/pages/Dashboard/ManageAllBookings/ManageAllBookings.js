@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import useAuth from '../../../hooks/useAuth';
 import './ManageAllBookings.css';
 
 const ManageAllBookings = () => {
-    const { user } = useAuth();
 
     const [manageBookings, setManageBookings] = useState([]);
     const [updated, setUpdated] = useState(false);

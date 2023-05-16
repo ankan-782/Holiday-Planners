@@ -10,11 +10,11 @@ const Registration = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [name, setName] = useState('');
-    // const [error, setError] = useState('');
 
     const location = useLocation();
     const history = useHistory();
     const redirect_url = location?.state?.from || '/';
+
 
     const getName = e => {
         setName(e.target.value);
@@ -34,7 +34,7 @@ const Registration = () => {
     const handleGoogleLogin = () => {
         signInUsingGoogle()
             .then(result => {
-                setUser(result.user);
+                setUser(result?.user);
                 history.push(redirect_url);
             })
     }
@@ -46,12 +46,22 @@ const Registration = () => {
         setIsLoading(true);
         processRegistration(email, password)
             .then(result => {
-                console.log(result);
-                setUserDetails(name);
+                setUserDetails(name)
+                    .then(result => {
+                        // window.location.reload();
+                        setUser(result.user);
+                    })
+                    .catch(error => {
+                        setError(error.message);
+                    })
+                setError("");
                 history.push(redirect_url);
-                setError('');
             })
             .catch(error => {
+                if (error.code === 'auth/email-already-in-use') {
+                    setError("This user is already exists");
+                    return;
+                }
                 setError(error.message);
             })
             .finally(() => setIsLoading(false));

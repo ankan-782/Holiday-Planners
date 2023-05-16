@@ -1,10 +1,8 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import useAuth from '../../../hooks/useAuth';
 import './Footer.css';
 
 const Footer = () => {
-    const { user } = useAuth();
 
     return (
         <div id="big-footer">
@@ -20,10 +18,10 @@ const Footer = () => {
                         <p>We Provide best holiday planning to our customers so that they can travel peacefully and they can utilize their time perfectly. We always look after our every customer very carefully. We running our service from the last 20 year.</p>
                         <div className="mt-4">
                             <h5>Receive Email Updates</h5>
-                            <div className="d-flex">
-                                <input type="text" placeholder="Your Email Address" className="form-control footer-input-bg border-radius" value={user?.email} />
-                                <button className="ms-2 btn btn-outline-dark border-radius">SUBMIT</button>
-                            </div>
+                            <form onSubmit={() => alert("You will get Email updates regularly")} className="d-flex">
+                                <input type="text" placeholder="Your Email Address" className="form-control footer-input-bg border-radius" />
+                                <button type="submit" className="ms-2 btn btn-outline-dark border-radius">SUBMIT</button>
+                            </form>
                         </div>
                         <div className="mt-5">
                             <i className="fs-1 me-2 fab fa-cc-paypal"></i>
@@ -63,13 +61,13 @@ const Footer = () => {
                                 <div className="border-start border-2 border-dark ps-3 mb-4">
                                     <p>Follow us</p>
                                     <div className="d-flex fs-5 social-links">
-                                        <a href="https://www.facebook.com/ankan.roy.50999" target="_blank" className="me-3">
+                                        <a href="https://www.facebook.com/ankan.roy.50999" target="_blank" className="me-3" rel="noreferrer">
                                             <i className="fab fa-facebook"></i>
                                         </a>
-                                        <a href="https://www.instagram.com/ankan_782/" target="_blank" className="me-3">
+                                        <a href="https://www.instagram.com/ankan_782/" target="_blank" className="me-3" rel="noreferrer">
                                             <i className="fab fa-instagram"></i>
                                         </a>
-                                        <a href="https://twitter.com/AvijitAnkan" target="_blank" className="me-3">
+                                        <a href="https://twitter.com/AvijitAnkan" target="_blank" className="me-3" rel="noreferrer">
                                             <i className="fab fa-twitter"></i>
                                         </a>
                                     </div>

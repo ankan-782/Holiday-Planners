@@ -18,15 +18,15 @@ const Registration = () => {
 
     const getName = e => {
         setName(e.target.value);
-    }
+    };
 
     const getEmail = e => {
         setEmail(e.target.value);
-    }
+    };
 
     const getPassword = e => {
         setPassword(e.target.value);
-    }
+    };
 
 
 
@@ -36,8 +36,8 @@ const Registration = () => {
             .then(result => {
                 setUser(result?.user);
                 history.push(redirect_url);
-            })
-    }
+            });
+    };
 
 
 
@@ -53,7 +53,7 @@ const Registration = () => {
                     })
                     .catch(error => {
                         setError(error.message);
-                    })
+                    });
                 setError("");
                 history.push(redirect_url);
             })
@@ -65,7 +65,7 @@ const Registration = () => {
                 setError(error.message);
             })
             .finally(() => setIsLoading(false));
-    }
+    };
 
     return (
         <div id='registration' className="registration-bg text-dark">

@@ -48,8 +48,8 @@ const Banner = () => {
                         <div className="p-5">
                             <h1 className="banner-title mb-5 fw-bold">Discover, plan, and embark on unforgettable journeys with Holiday Planner.</h1>
                             <p className="lh-base fw-bold w-75">Your personalized guide to seamless travel experiences and cherished memories.</p>
-                            <div className="d-flex mt-5">
-                                <img style={{ width: "150px", height: "50px" }} src={appleStoreLogo} alt="apple store logo" className="me-3" />
+                            <div className="d-flex flex-column flex-sm-row justify-content-center align-items-center mt-5">
+                                <img style={{ width: "150px", height: "50px" }} src={appleStoreLogo} alt="apple store logo" className="me-sm-3 mb-2 mb-sm-0" />
                                 <img style={{ width: "150px", height: "50px" }} src={googlePlayStoreLogo} alt="play store logo" />
                             </div>
                         </div>

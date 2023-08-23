@@ -4,11 +4,18 @@
 }
 
 .banner-content {
-    background-color: rgb(224, 224, 224);
-    /* border-radius: 50px; */
+    position: relative;
+    filter: url('#flt_tag');
+}
+
+.banner-content-bg {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    background-color: rgb(239, 239, 239);
     -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
     clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
-    /* clip-path: polygon(100% 492px, 0% 100%, 0% 0%, 100% 0%); */
 }
 
 .flt_svg {
@@ -18,68 +25,6 @@
     height: 0px;
 }
 
-.box_parent {
-    filter: url('#flt_tag');
-}
-
 .banner-title {
     font-size: 55px;
 }
-
-/* .banner-brand {
-    color: rgb(243, 212, 135);
-    font-family: 'Josefin Sans', sans-serif;
-    background-color: rgba(185, 163, 195, 0.233);
-    border-radius: 10px;
-    padding: 13px 100px;
-}
-
-.slide1 {
-    background-image: url('https://i.ibb.co/q9bKNjv/coxs-Bazar.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    position: relative;
-    z-index: 1;
-}
-
-.slide2 {
-    background-image: url('https://i.ibb.co/zGJ2sLB/sundor4.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    position: relative;
-    z-index: 1;
-}
-
-.slide3 {
-    background-image: url('https://i.ibb.co/BcV8Tn9/jaf2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    position: relative;
-    z-index: 1;
-}
-
-.slide1::after,
-.slide2::after,
-.slide3::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: black;
-    opacity: 0.6;
-    z-index: -1;
-}
-
-.carousel-caption {
-    bottom: 10% !important;
-    padding: 0;
-}
-
-.carousel-caption h1 {
-    font-size: 70px;
-} */

@@ -33,9 +33,9 @@
     animation: 20s slide infinite linear;
 }
 
-.logos:hover .logos-slide {
+/* .logos:hover .logos-slide {
     animation-play-state: paused;
-}
+} */
 
 .logos-slide img {
     height: 50px;

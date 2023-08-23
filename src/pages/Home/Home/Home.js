@@ -44,9 +44,9 @@ const Home = () => {
                             // This is the requirement in Assignment 11.
                             // but I can do the slice method to show 6 services. but for requirement purpose i commented those lines above.
                         }
-                        <div className="d-flex justify-content-center align-items-center">
+                        {/* <div className="d-flex justify-content-center align-items-center">
                             <NavLink to="/addNewService" className="plus-text"><i className="far fa-plus-square plus-icon"></i></NavLink>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="d-flex justify-content-center align-items-center">
                         <NavLink className="btn btn-outline-dark border-radius my-5" to="/services">View All Packages in Services section</NavLink>

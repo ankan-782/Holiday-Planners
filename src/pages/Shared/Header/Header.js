@@ -40,12 +40,12 @@ const Header = () => {
                         <NavLink activeStyle={{
                             fontWeight: "bold",
                         }} className="nav-link text-black border-bottom-design me-3" to="/services">Services</NavLink>
-                        <NavLink activeStyle={{
+                        {user?.email && <NavLink activeStyle={{
                             fontWeight: "bold",
-                        }} className="nav-link text-black border-bottom-design me-3" to="/dashboard">Dashboard</NavLink>
+                        }} className="nav-link text-black border-bottom-design me-3" to="/dashboard">Dashboard</NavLink>}
                     </div>
 
-                    <div className="ms-auto d-flex justify-content-center align-items-center">
+                    <div className="d-flex justify-content-center align-items-center">
                         <div className="nav-item ms-lg-4">
                             {user?.email ? <div className="d-flex justify-content-between align-items-center">
                                 <button onClick={logOut} className="btn btn-outline-dark border-radius me-3"><p><i className="fas fa-sign-out-alt me-2"></i>Log Out</p></button>
@@ -56,7 +56,7 @@ const Header = () => {
                             </div>
                                 : <div>
                                     <NavLink to="/login"><button className="btn btn-outline-dark border-radius me-3"><p><i className="fas fa-sign-in-alt me-2"></i>Log In</p></button></NavLink>
-                                    <NavLink to="/register"><button className="btn btn-outline-dark border-radius"><p><i className="fas fa-sign-in-alt me-2"></i>Register</p></button></NavLink>
+                                    {/* <NavLink to="/register"><button className="btn btn-outline-dark border-radius"><p><i className="fas fa-sign-in-alt me-2"></i>Register</p></button></NavLink> */}
                                 </div>}
                         </div>
                     </div>

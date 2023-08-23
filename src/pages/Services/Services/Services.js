@@ -3,8 +3,10 @@ import { NavLink } from 'react-router-dom';
 import useServicesInfo from '../../../hooks/useServicesInfo';
 import Service from '../Service/Service';
 import './Services.css';
+import useAuth from '../../../hooks/useAuth';
 
 const Services = () => {
+    const { user } = useAuth();
 
     //custom hook used
     const [servicesInfo, loading] = useServicesInfo();
@@ -28,9 +30,9 @@ const Services = () => {
                                     service={service}
                                 ></Service>)
                             }
-                            <div className="d-flex justify-content-center align-items-center">
+                            {user?.email && <div className="d-flex justify-content-center align-items-center">
                                 <NavLink to="/addNewService" className="plus-text"><i className="far fa-plus-square plus-icon"></i></NavLink>
-                            </div>
+                            </div>}
                         </div>
                     </div>
                 </div>

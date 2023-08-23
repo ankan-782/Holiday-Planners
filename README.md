@@ -79,47 +79,39 @@ npm start
 
 - landing page at larger devices
 
-![screenshot 1](./src/images/screenshots/landing-page-full-larger-device.png)
+![screenshot 1](./src/images/screenshots/landing-full-page.png)
 
 - services page at larger devices
 
-![screenshot 2](./src/images/screenshots/services-page-full-larger-device.png)
+![screenshot 2](./src/images/screenshots/services-full-page.png)
 
 - booking info page at larger devices
 
-![screenshot 3](./src/images/screenshots/booking-information-page-larger-device.png)
+![screenshot 3](./src/images/screenshots/booking-package.png)
 
 - login page at larger devices
 
-![screenshot 4](./src/images/screenshots/login-page-full-larger-device.png)
+![screenshot 4](./src/images/screenshots/login.png)
 
 - registration page at larger devices
 
-![screenshot 5](./src/images/screenshots/registration-page-full-larger-device.png)
+![screenshot 5](./src/images/screenshots/registration.png)
 
 - add new services page at larger devices
 
-![screenshot 6](./src/images/screenshots/add-new-service-page-larger-device.png)
+![screenshot 6](./src/images/screenshots/add-new-package.png)
 
 - all bookings list page at larger devices
 
-![screenshot 7](./src/images/screenshots/all-bookings-list-page-larger-device.png)
+![screenshot 7](./src/images/screenshots/manage-all-booking.png)
 
 - my bookings page with bookings at larger devices
 
-![screenshot 8](./src/images/screenshots/my-bookings-page-with-bookings-larger-device.png)
-
-- my bookings page without bookings at larger devices
-
-![screenshot 9](./src/images/screenshots/my-bookings-page-without-booking-larger-device.png)
-
-- my bookings page at smaller devices
-
-![screenshot 10](./src/images/screenshots/my-bookings-page-smaller-device.png)
+![screenshot 8](./src/images/screenshots/my-booking.png)
 
 - when navbar is opened at smaller devices
 
-![screenshot 11](./src/images/screenshots/navbar-opened-smaller-device.png)
+![screenshot 11](./src/images/screenshots/navbar-smaller-device.png)
 
 ## My process
 

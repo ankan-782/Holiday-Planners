@@ -1,0 +1,25 @@
+.callToAction-bg {
+    background-color: white;
+}
+
+.callToAction-content {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    background-color: rgb(206, 206, 206);
+    border-radius: 30px;
+    padding: 60px;
+    text-align: center;
+}
+
+.callToAction-content::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(../../../images/cta/wave.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    z-index: -1;
+    opacity: 0.4;
+}

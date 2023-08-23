@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import useServicesInfo from '../../../hooks/useServicesInfo';
 import AboutUs from '../AboutUs/AboutUs';
 import Banner from '../Banner/Banner';
+import CallToAction from '../CallToAction/CallToAction';
 import Gallery from '../Gallery/Gallery';
 import OurPartners from '../OurPartners/OurPartners';
 import ServicesInHome from '../ServicesInHome/ServicesInHome';
@@ -55,6 +56,7 @@ const Home = () => {
 
             <AboutUs></AboutUs>
             <Gallery></Gallery>
+            <CallToAction></CallToAction>
         </div>
     );
 };

@@ -3,20 +3,14 @@ p {
     margin: 0;
 }
 #big-footer {
-    background-color: rgb(185, 163, 195);
+    background-color: rgb(243, 243, 243);
 }
 
 .footer-brand {
     font-family: 'Josefin Sans', sans-serif;
     text-transform: uppercase;
-    transition: 0.7s ease;
-    border-bottom: 3px solid rgb(185, 163, 195);
 }
 
-.footer-brand:hover{
-    border-bottom: 3px solid black;
-    transition: 0.7s ease;
-}
 .form-control:focus{
     border-color: black;
     box-shadow: 0 0 0 0.25rem rgba(66, 70, 73, 0.5) !important
@@ -25,17 +19,15 @@ p {
 .footer-input-bg {
     color: black;
     border: 1px solid black;
-    background-color: rgb(224, 202, 223);
+    background-color: white;
 }
-
 
 .social-links a {
     text-decoration: none;
     color: black;
-    border-bottom: 3px solid rgb(185, 163, 195);
+    transition: 0.3s ease;
 }
 
 .social-links a:hover {
-    border-bottom: 3px solid black;
-    transition: 0.7s ease;
+    color: rgb(255, 102, 0);
 }

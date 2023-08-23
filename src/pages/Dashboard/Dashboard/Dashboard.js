@@ -10,7 +10,7 @@ const Dashboard = () => {
         <div id='dashboard'>
             <div className="dashboard-bg text-dark">
                 <div className="dashboard-content d-flex justify-content-center align-items-start">
-                    <div className="container-fluid p-lg-5 p-4">
+                    <div className="container px-lg-0 px-4 py-5">
                         <div className="row g-4">
                             <div className="col-12 col-lg-2">
                                 <NavLink activeStyle={{ fontWeight: "bold" }} className="nav-link text-black border-bottom-design-dashboard me-3" to="/myBookings"><i className="fas fa-check-circle me-2"></i>My bookings</NavLink>

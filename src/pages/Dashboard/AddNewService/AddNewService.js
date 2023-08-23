@@ -30,14 +30,14 @@ const AddNewServices = () => {
                     alert('Service Added successfully.');
                     reset();
                 }
-            })
-    }
+            });
+    };
 
 
     return (
         <div id='add-new-service' className="add-new-service-bg text-dark">
             <div className="add-new-service-content d-flex justify-content-center align-items-start">
-                <div className="container-fluid p-lg-5 p-4">
+                <div className="container px-lg-0 px-4 py-5">
                     <div className="row g-5">
                         <div className="col-12 col-lg-2">
                             <NavLink activeStyle={{ fontWeight: "bold" }} className="nav-link text-black border-bottom-design-add-new-service me-3" to="/myBookings"><i className="fas fa-check-circle me-2"></i>My bookings</NavLink>
@@ -49,43 +49,43 @@ const AddNewServices = () => {
                                 <h4 className="mb-4 border-start border-3 ps-3 border-dark text-uppercase">Add New Service</h4>
                                 <form onSubmit={handleSubmit(onSubmit)} className="mb-5">
                                     <div className="mb-3">
-                                        <input type="text" className="border-radius form-control input-bg py-3" placeholder="Destination Name" {...register("destination")} required />
+                                        <input type="text" className="border-radius form-control add-new-service-input-bg py-3" placeholder="Destination Name" {...register("destination")} required />
                                     </div>
                                     <div className="mb-3">
-                                        <input type="text" className="form-control input-bg py-3 border-radius" placeholder="Destination Image Link" {...register("destinationImg")} required />
+                                        <input type="text" className="form-control add-new-service-input-bg py-3 border-radius" placeholder="Destination Image Link" {...register("destinationImg")} required />
                                     </div>
                                     <div className="mb-3">
-                                        <input type="text" className="form-control input-bg py-3 border-radius" placeholder="Destination Short Description" {...register("short_description")} required />
+                                        <input type="text" className="form-control add-new-service-input-bg py-3 border-radius" placeholder="Destination Short Description" {...register("short_description")} required />
                                     </div>
                                     <div className="mb-3">
-                                        <input type="text" className="form-control input-bg py-3 border-radius" placeholder="Hotel Name" {...register("hotelName")} required />
+                                        <input type="text" className="form-control add-new-service-input-bg py-3 border-radius" placeholder="Hotel Name" {...register("hotelName")} required />
                                     </div>
                                     <div className="mb-3">
-                                        <input type="text" className="form-control input-bg py-3 border-radius" placeholder="Hotel Image Link" {...register("hotelImg")} required />
+                                        <input type="text" className="form-control add-new-service-input-bg py-3 border-radius" placeholder="Hotel Image Link" {...register("hotelImg")} required />
                                     </div>
                                     <div className="mb-3">
-                                        <input type="text" className="form-control input-bg py-3 border-radius" placeholder="First Destination Spot" {...register("spotNoOne")} required />
+                                        <input type="text" className="form-control add-new-service-input-bg py-3 border-radius" placeholder="First Destination Spot" {...register("spotNoOne")} required />
                                     </div>
                                     <div className="mb-3">
-                                        <input type="text" className="form-control input-bg py-3 border-radius" placeholder="Second Destination Spot" {...register("spotNoTwo")} required />
+                                        <input type="text" className="form-control add-new-service-input-bg py-3 border-radius" placeholder="Second Destination Spot" {...register("spotNoTwo")} required />
                                     </div>
                                     <div className="mb-3">
-                                        <input type="text" className="form-control input-bg py-3 border-radius" placeholder="Third Destination Spot" {...register("spotNoThree")} required />
+                                        <input type="text" className="form-control add-new-service-input-bg py-3 border-radius" placeholder="Third Destination Spot" {...register("spotNoThree")} required />
                                     </div>
                                     <div className="mb-3">
-                                        <input type="text" className="form-control input-bg py-3 border-radius" placeholder="Fourth Destination Spot" {...register("spotNoFour")} required />
+                                        <input type="text" className="form-control add-new-service-input-bg py-3 border-radius" placeholder="Fourth Destination Spot" {...register("spotNoFour")} required />
                                     </div>
                                     <div className="mb-3">
-                                        <input type="text" className="form-control input-bg py-3 border-radius" placeholder="Fifth Destination Spot" {...register("spotNoFive")} required />
+                                        <input type="text" className="form-control add-new-service-input-bg py-3 border-radius" placeholder="Fifth Destination Spot" {...register("spotNoFive")} required />
                                     </div>
                                     <div className="mb-3">
-                                        <input type="text" className="form-control input-bg py-3 border-radius" placeholder="Destination Duration" {...register("duration")} required />
+                                        <input type="text" className="form-control add-new-service-input-bg py-3 border-radius" placeholder="Destination Duration" {...register("duration")} required />
                                     </div>
                                     <div className="mb-3">
-                                        <input type="text" className="form-control input-bg py-3 border-radius" placeholder="Group Size" {...register("groupSize")} required />
+                                        <input type="text" className="form-control add-new-service-input-bg py-3 border-radius" placeholder="Group Size" {...register("groupSize")} required />
                                     </div>
                                     <div className="mb-3">
-                                        <input type="text" className="form-control input-bg py-3 border-radius" placeholder="Price" {...register("price")} required />
+                                        <input type="text" className="form-control add-new-service-input-bg py-3 border-radius" placeholder="Price" {...register("price")} required />
                                     </div>
                                     <div className="text-center">
                                         <button type="submit" className="btn btn-outline-dark border-radius mt-4">Add the Service</button>
@@ -97,74 +97,70 @@ const AddNewServices = () => {
                             <h4 className="mb-4 border-start border-3 ps-3 border-dark text-uppercase">Instagram</h4>
                             <div className="row g-3">
                                 <div className="col-12 col-lg-6">
-                                    <div className="img-content">
+                                    <div className="img-content border border-2 p-2 border-dark border-radius overflow-hidden">
                                         <div className="d-flex justify-content-center align-items-center">
                                             <h5 className="position-absolute text-white">C O X' S B A Z A R</h5>
-                                            <img src={img1} alt="" className="img-fluid border-radius border border-2 p-2 border-dark" />
+                                            <img src={img1} alt="" className="img-fluid border-radius" />
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-12 col-lg-6">
-                                    <div className="img-content">
+                                    <div className="img-content border border-2 p-2 border-dark border-radius overflow-hidden">
                                         <div className="d-flex justify-content-center align-items-center">
                                             <h5 className="position-absolute text-white">G U L I A K H A L I</h5>
-                                            <img src={img2} alt="" className="img-fluid border-radius border border-2 p-2 border-dark" />
+                                            <img src={img2} alt="" className="img-fluid border-radius" />
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-12 col-lg-6">
-                                    <div className="img-content">
+                                    <div className="img-content border border-2 p-2 border-dark border-radius overflow-hidden">
                                         <div className="d-flex justify-content-center align-items-center">
                                             <h5 className="position-absolute text-white">S U N D A R B A N</h5>
-                                            <img src={img3} alt="" className="img-fluid border-radius border border-2 p-2 border-dark" />
+                                            <img src={img3} alt="" className="img-fluid border-radius" />
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-12 col-lg-6">
-                                    <div className="img-content">
+                                    <div className="img-content border border-2 p-2 border-dark border-radius overflow-hidden">
                                         <div className="d-flex justify-content-center align-items-center">
                                             <h5 className="position-absolute text-white">V O L A G A N J</h5>
-                                            <img src={img4} alt="" className="img-fluid border-radius border border-2 p-2 border-dark" />
+                                            <img src={img4} alt="" className="img-fluid border-radius" />
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-12 col-lg-6">
-                                    <div className="img-content">
+                                    <div className="img-content border border-2 p-2 border-dark border-radius overflow-hidden">
                                         <div className="d-flex justify-content-center align-items-center">
                                             <h5 className="position-absolute text-white">S H O H I D - M I N A R</h5>
-                                            <img src={img7} alt="" className="img-fluid border-radius border border-2 p-2 border-dark" />
+                                            <img src={img7} alt="" className="img-fluid border-radius" />
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-12 col-lg-6">
-                                    <div className="img-content">
+                                    <div className="img-content border border-2 p-2 border-dark border-radius overflow-hidden">
                                         <div className="d-flex justify-content-center align-items-center">
                                             <h5 className="position-absolute text-white">S A J E K</h5>
-                                            <img src={img17} alt="" className="img-fluid border-radius border border-2 p-2 border-dark" />
+                                            <img src={img17} alt="" className="img-fluid border-radius" />
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-12 col-lg-6">
-                                    <div className="img-content">
+                                    <div className="img-content border border-2 p-2 border-dark border-radius overflow-hidden">
                                         <div className="d-flex justify-content-center align-items-center">
                                             <h5 className="position-absolute text-white">A H S A N - M A N J I L</h5>
-                                            <img src={img9} alt="" className="img-fluid border-radius border border-2 p-2 border-dark" />
+                                            <img src={img9} alt="" className="img-fluid border-radius" />
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-12 col-lg-6">
-                                    <div className="img-content">
+                                    <div className="img-content border border-2 p-2 border-dark border-radius overflow-hidden">
                                         <div className="d-flex justify-content-center align-items-center">
                                             <h5 className="position-absolute text-white">S R I M O N G O L</h5>
-                                            <img src={img24} alt="" className="img-fluid border-radius border border-2 p-2 border-dark" />
+                                            <img src={img24} alt="" className="img-fluid border-radius" />
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
-
-
-
                         </div>
                     </div>
                 </div>

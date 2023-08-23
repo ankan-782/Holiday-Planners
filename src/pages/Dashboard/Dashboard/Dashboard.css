@@ -1,17 +1,21 @@
 #dashboard {
     padding-top: 66px;
 }
+
 .dashboard-bg {
-    background-color: rgb(242, 226, 250);
+    background-color: white;
 }
+
 .border-bottom-design-dashboard {
-    border-bottom: 2px solid rgb(242, 226, 250);
+    border-bottom: 2px solid white;
 }
+
 .border-bottom-design-dashboard:hover {
     border-bottom: 2px solid black;
 }
-@media screen and (min-width: 992px){
-    .dashboard-content{
+
+@media screen and (min-width: 992px) {
+    .dashboard-content {
         min-height: calc(100vh - 66px);
     }
 }

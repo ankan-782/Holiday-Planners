@@ -1,10 +1,12 @@
-#about-us{
+#about-us {
     padding: 50px 0;
 }
-.img-content{
+
+.img-content {
     /* width: 100%; */
     position: relative;
 }
+
 .img-content div::before {
     content: '';
     position: absolute;
@@ -30,20 +32,19 @@
 }
 
 .about-us-bg {
-    background-color: rgb(225, 207, 235);
+    background-color: white;
 }
+
 .about-card {
     padding: 30px;
-    background-color: rgb(237, 226, 243);
+    background-color: rgb(243, 243, 243);
+    box-shadow: 0 0 10px rgb(196, 196, 196);
     border-radius: 10px;
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease;
 }
-.about-card:hover {
-    box-shadow: 0px 0px 30px 5px rgb(171, 152, 179);
-    transition: 0.5s ease-in-out;
-}
-@media screen and (min-width: 992px){
-    #about-us{
+
+@media screen and (min-width: 992px) {
+    #about-us {
         min-height: 100vh;
     }
 }

@@ -1,7 +1,62 @@
 .partners-bg {
-    background-color: rgb(225, 207, 235);
+    background-color: white;
 }
-.partners-content{
-    padding-top: 100px !important;
-    padding-bottom: 100px !important;
+
+.logos {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.logos::before,
+.logos::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 150px;
+    height: 100%;
+    z-index: 2;
+}
+
+.logos::before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.logos::after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.logos-slide {
+    display: inline-block;
+    animation: 20s slide infinite linear;
+}
+
+.logos:hover .logos-slide {
+    animation-play-state: paused;
+}
+
+.logos-slide img {
+    height: 50px;
+    margin: 0 40px;
+    cursor: pointer;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .logos::before,
+    .logos::after {
+        width: 50px;
+    }
 }

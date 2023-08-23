@@ -28,7 +28,7 @@ const ManageAllBookings = () => {
                     }
                 });
         }
-    }
+    };
 
     const updateBookingStatus = (id) => {
         fetch(`https://holiday-planner-server-side.onrender.com/bookings/${id}`, {
@@ -41,14 +41,14 @@ const ManageAllBookings = () => {
             .then(res => res.json())
             .then(data => {
                 setUpdated(!updated);
-            })
+            });
 
-    }
+    };
 
     return (
         <div id='manage-all-bookings' className="manage-all-bookings-bg text-dark">
             <div className="manage-all-bookings-content d-flex justify-content-center align-items-start">
-                <div className="container-fluid p-lg-5 p-4">
+                <div className="container px-lg-0 px-4 py-5">
                     <div className="row g-4">
                         <div className="col-12 col-lg-2">
                             <NavLink activeStyle={{ fontWeight: "bold" }} className="nav-link text-black border-bottom-design-manage-all-bookings me-3" to="/myBookings"><i className="fas fa-check-circle me-2"></i>My bookings</NavLink>
@@ -62,39 +62,35 @@ const ManageAllBookings = () => {
                                     {
                                         manageBookings.map(booking =>
                                             <div className="col">
-                                                <div className="card bookings p-3 border-0 border-radius h-100">
-                                                    <div className="row gy-3 gx-5">
+                                                <div className="card bookings p-3 border-0 border-radius position-relative">
+                                                    <div className="row g-4">
                                                         <div className="col-12 col-lg-5">
-                                                            <div className="mt-3">
-                                                                <p>Booking Id: <p className="booking-id">{booking?._id}</p></p>
-                                                                <h6 className="card-title mb-0 mt-3">Package Name: <span className="ms-1 fs-4">{booking?.packageName}</span></h6>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-12 col-lg-4">
                                                             <div>
-                                                                <div>
-                                                                    <p className="text-decoration-underline">User Information</p>
-                                                                    <div className="mt-2">
-                                                                        <p>Name: <span className="info ms-1 text-decoration-underline">{booking?.name}</span></p>
-                                                                        <p>Email Address: <span className="info ms-1 text-decoration-underline">{booking?.email}</span></p>
-                                                                        <p>Phone No: <span className="info ms-1 text-decoration-underline">{booking?.phoneNo}</span></p>
-                                                                        <p>Date to Visit: <span className="info ms-1 text-decoration-underline">{booking?.dateToVisit}</span></p>
-                                                                        <p>No of tickets: <span className="info ms-1 text-decoration-underline">{booking?.numberOfTickets}</span></p>
-                                                                    </div>
+                                                                <p>Booking Id: <span className="info">{booking?._id}</span></p>
+                                                                <p className="card-title mb-0 mt-3">Package Name: <span className="ms-1 fs-4 info">{booking?.packageName}</span></p>
+                                                            </div>
+                                                        </div>
+                                                        <div className="col-12 col-lg-7">
+                                                            <div>
+                                                                <p className="text-decoration-underline">User Information</p>
+                                                                <div className="mt-2">
+                                                                    <p>Name: <span className="info ms-1 text-decoration-underline">{booking?.name}</span></p>
+                                                                    <p>Email Address: <span className="info ms-1 text-decoration-underline">{booking?.email}</span></p>
+                                                                    <p>Phone No: <span className="info ms-1 text-decoration-underline">{booking?.phoneNo}</span></p>
+                                                                    <p>Date to Visit: <span className="info ms-1 text-decoration-underline">{booking?.dateToVisit}</span></p>
+                                                                    <p>No of tickets: <span className="info ms-1 text-decoration-underline">{booking?.numberOfTickets}</span></p>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-12 col-lg-3">
-                                                            <div className="mt-3 d-flex flex-column justify-content-center align-items-center">
-                                                                <div className="mb-3">
-                                                                    {booking.status === 'pending' ? (<small className="status-red text-center">{booking?.status}</small>) : (<small className="status-green text-center">{booking?.status}</small>)}
-                                                                </div>
-                                                                <div className="d-flex justify-content-center align-items-center">
-                                                                    {booking.status === 'pending' && <button className="btn btn-outline-success border-radius me-1" onClick={() => updateBookingStatus(booking._id)}><i className="fas fa-check-double fs-6 text-dark"></i></button>}
-                                                                    <button className="btn btn-outline-danger border-radius" onClick={() => deleteBooking(booking._id)}><i className="fas fa-trash-alt fs-6 text-dark"></i></button>
-                                                                </div>
-                                                            </div>
+                                                    </div>
+                                                    <div className="mt-4">
+                                                        <div className="d-flex">
+                                                            {booking.status === 'pending' && <button className="btn btn-outline-success border-radius w-100 me-3" onClick={() => updateBookingStatus(booking._id)}>Approve <i className="fas fa-check-double fs-6"></i></button>}
+                                                            <button className="btn btn-outline-danger border-radius w-100" onClick={() => deleteBooking(booking._id)}>Delete <i className="fas fa-trash-alt fs-6"></i></button>
                                                         </div>
+                                                    </div>
+                                                    <div style={{top: 0, right: 0}} className="position-absolute">
+                                                        {booking.status === 'pending' ? (<small className="status-red text-center">{booking?.status}</small>) : (<small className="status-green text-center">{booking?.status}</small>)}
                                                     </div>
                                                 </div>
                                             </div>)

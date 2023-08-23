@@ -22,7 +22,7 @@ const Header = () => {
 
     return (
         <nav id='navbar' className="navbar fixed-top navbar-expand-lg navbar-light navbar-bg">
-            <div className="container-fluid px-lg-5">
+            <div className="container px-lg-0 px-4">
                 <NavLink className="navbar-brand" to="/home">
                     <div className="d-flex justify-content-between align-items-center">
                         <img src={logo} alt="" width="40" height="40" />

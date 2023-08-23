@@ -46,7 +46,7 @@ const Gallery = () => {
                 <i className="fab fa-instagram instagram-icon"></i>
                 <i className="fab fa-facebook facebook-icon"></i>
                 <i className="fab fa-twitter twitter-icon"></i>
-                <div className="container p-4 px-lg-0">
+                <div className="container px-lg-0 px-4 py-5">
                     <h5 className="border-start border-3 border-dark ps-3 mb-5">Gallery Section</h5>
                     <div className="row g-4">
                         <div className="col-12 col-md-3 col-lg-2">

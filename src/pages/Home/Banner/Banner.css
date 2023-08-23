@@ -1,4 +1,32 @@
-.banner-brand {
+.banner-bg {
+    background-color: white;
+    padding-block: 120px;
+}
+
+.banner-content {
+    background-color: rgb(224, 224, 224);
+    /* border-radius: 50px; */
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+    /* clip-path: polygon(100% 492px, 0% 100%, 0% 0%, 100% 0%); */
+}
+
+.flt_svg {
+    visibility: hidden;
+    position: absolute;
+    width: 0px;
+    height: 0px;
+}
+
+.box_parent {
+    filter: url('#flt_tag');
+}
+
+.banner-title {
+    font-size: 55px;
+}
+
+/* .banner-brand {
     color: rgb(243, 212, 135);
     font-family: 'Josefin Sans', sans-serif;
     background-color: rgba(185, 163, 195, 0.233);
@@ -54,4 +82,4 @@
 
 .carousel-caption h1 {
     font-size: 70px;
-}
+} */

@@ -6,13 +6,13 @@ const Footer = () => {
 
     return (
         <div id="big-footer">
-            <div className="container text-dark pt-5 pb-4 px-4 px-lg-0">
+            <div className="container text-dark px-4 py-5 px-lg-0">
                 <div className="row g-5">
                     <div className="col-12 col-lg-4">
                         <NavLink className="navbar-brand text-dark" to="/home">
-                            <div className="d-flex align-items-center">
-                                <i className="fas fa-suitcase-rolling fs-1 me-3"></i>
-                                <h5 className="footer-brand m-0 pt-1">Holiday Planners</h5>
+                            <div className="d-flex align-items-baseline">
+                                <i className="fas fa-suitcase-rolling fs-1 me-2"></i>
+                                <h4 className="footer-brand m-0 pt-1">Holiday Planners</h4>
                             </div>
                         </NavLink>
                         <p>We Provide best holiday planning to our customers so that they can travel peacefully and they can utilize their time perfectly. We always look after our every customer very carefully. We running our service from the last 20 year.</p>

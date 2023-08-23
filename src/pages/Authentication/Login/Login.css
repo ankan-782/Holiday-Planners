@@ -2,52 +2,42 @@
     padding-top: 80px;
     min-height: 100vh;
 }
+
 .login-bg {
-    background-color: rgb(225, 207, 235);
+    background-color: white;
 }
 
 .plane-icon {
     display: none;
 }
 
-.login-content-sizing {
-    background-color: rgb(223, 204, 233);
-    border-radius: 10px;
-}
-
 .account-switch:hover {
     text-decoration: underline !important;
 }
 
-.form-control:focus{
+.form-control:focus {
     border-color: black;
     box-shadow: 0 0 0 0.25rem rgba(66, 70, 73, 0.5) !important
 }
 
-.form-control::placeholder {
-    color: rgb(49, 49, 49) !important
-}
-
-.input-bg {
+.login-input-bg {
     color: white;
     border: 1px solid black;
-    background-color: rgb(150, 135, 158) !important;
+    background-color: white;
 }
 
 
-@media screen and (min-width: 992px){
+@media screen and (min-width: 992px) {
     #login {
         padding-top: 10px;
         min-height: 100vh;
     }
+
     .login-content-sizing {
         width: 50%;
         margin: 0 auto;
     }
-    /* .login-content {
-        position: relative;
-        min-height: calc(100vh - 66px);
-    } */
+
     .plane-icon {
         display: block;
         position: absolute;

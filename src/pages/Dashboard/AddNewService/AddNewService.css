@@ -1,10 +1,12 @@
 #add-new-service {
     padding-top: 66px;
 }
-.img-content{
+
+.img-content {
     /* width: 100%; */
     position: relative;
 }
+
 .img-content div::before {
     content: '';
     position: absolute;
@@ -28,12 +30,21 @@
 .img-content div:hover::before {
     opacity: 1;
 }
+
 .add-new-service-bg {
-    background-color: rgb(242, 226, 250);
+    background-color: white;
 }
+
 .border-bottom-design-add-new-service {
-    border-bottom: 2px solid rgb(242, 226, 250);
+    border-bottom: 2px solid white;
 }
+
 .border-bottom-design-add-new-service:hover {
     border-bottom: 2px solid black;
+}
+
+.add-new-service-input-bg {
+    color: white;
+    border: 1px solid black;
+    background-color: white;
 }

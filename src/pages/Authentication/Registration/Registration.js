@@ -71,25 +71,25 @@ const Registration = () => {
         <div id='registration' className="registration-bg text-dark">
             <div className="registration-content d-flex justify-content-center align-items-center align-items-lg-start p-lg-5">
                 <i className="fas fa-hotel hotel-icon"></i>
-                <div className="container p-3">
+                <div style={{ paddingBlock: "50px" }} className="container px-lg-0 px-4">
                     <div className="registration-content-sizing">
                         <div className="d-flex justify-content-between mb-5">
-                            <NavLink to="/register" className="border-radius text-decoration-none text-dark py-2 text-center w-100" activeStyle={{ backgroundColor: "rgb(185, 163, 195)" }}>Registration</NavLink>
-                            <NavLink to="/login" className="border-radius text-decoration-none text-dark py-2 text-center w-100" activeStyle={{ backgroundColor: "rgb(185, 163, 195)" }}>Log In</NavLink>
+                            <NavLink to="/register" className="border-radius text-decoration-none text-dark py-2 text-center w-100" activeStyle={{ backgroundColor: "rgb(230, 230, 230)" }}>Registration</NavLink>
+                            <NavLink to="/login" className="border-radius text-decoration-none text-dark py-2 text-center w-100" activeStyle={{ backgroundColor: "rgb(230, 230, 230)" }}>Log In</NavLink>
                         </div>
                         <form onSubmit={handleRegistration}>
                             <div className="mb-3">
                                 <label htmlFor="exampleInputName" className="form-label fs-6">Name</label>
-                                <input type="text" onBlur={getName} className="form-control input-bg py-3 border-radius" id="exampleInputName" placeholder="Name" required />
+                                <input type="text" onBlur={getName} className="form-control registration-input-bg py-3 border-radius" id="exampleInputName" placeholder="Name" required />
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="exampleInputEmail1" className="form-label fs-6">Email address</label>
-                                <input type="email" onBlur={getEmail} className="form-control input-bg py-3 border-radius" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="abc@pqr.xyz" required />
+                                <input type="email" onBlur={getEmail} className="form-control registration-input-bg py-3 border-radius" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="abc@pqr.xyz" required />
                                 <div id="emailHelp" className="form-text text-dark">We'll never share your email with anyone else.</div>
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="inputPassword5" className="form-label fs-6">Password</label>
-                                <input type="password" onBlur={getPassword} id="inputPassword5" className="form-control input-bg py-3 border-radius" aria-describedby="passwordHelpBlock" placeholder="Password" required />
+                                <input type="password" onBlur={getPassword} id="inputPassword5" className="form-control registration-input-bg py-3 border-radius" aria-describedby="passwordHelpBlock" placeholder="Password" required />
                                 <div id="passwordHelpBlock" className="form-text text-dark">
                                     Your password must be at least 6 characters long, contain at least one uppercase letter and at least a number.
                                 </div>

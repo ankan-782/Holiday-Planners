@@ -40,13 +40,13 @@ const MyBookings = () => {
                     }
                 });
         }
-    }
+    };
 
 
     return (
         <div id='my-bookings' className="my-bookings-bg text-dark">
             <div className="my-bookings-content d-flex justify-content-center align-items-start">
-                <div className="container-fluid p-lg-5 p-4">
+                <div className="container px-lg-0 px-4 py-5">
                     <div className="row g-4">
                         <div className="col-12 col-lg-2">
                             <NavLink activeStyle={{ fontWeight: "bold" }} className="nav-link text-black border-bottom-design-my-bookings me-3" to="/myBookings"><i className="fas fa-check-circle me-2"></i>My bookings</NavLink>
@@ -61,18 +61,18 @@ const MyBookings = () => {
                                     {
                                         myBookings.map(mybooking =>
                                             <div className="col">
-                                                <div className="card my-bookings p-3 border-0 border-radius h-100">
+                                                <div className="card my-bookings p-3 border-0 border-radius">
                                                     <img src={mybooking?.destinationImg} alt="" className="w-100 border border-1 border-radius border-dark" />
                                                     <div className="mt-3 d-flex justify-content-between align-items-center">
-                                                        <p>Booking Id: <p className="booking-id">{mybooking?._id}</p></p>
+                                                        <p>Booking Id: <span className="info">{mybooking?._id}</span></p>
                                                         {mybooking.status === 'pending' ? (<p className="status-red card-text">{mybooking?.status}</p>) : (<p className="status-green card-text">{mybooking?.status}</p>)}
                                                     </div>
-                                                    <h5 className="card-title mt-3 mb-0">Package Name: {mybooking?.packageName}</h5>
+                                                    <h5 className="card-title mt-3 mb-0">Package Name: <span className="info">{mybooking?.packageName}</span></h5>
                                                     <div className="mt-4">
                                                         <p>Date to Visit: <span className="info ms-1 text-decoration-underline">Date to Visit: {mybooking?.dateToVisit}</span></p>
                                                         <p>No of tickets: <span className="info ms-1 text-decoration-underline">No of tickets: {mybooking?.numberOfTickets}</span></p>
                                                     </div>
-                                                    <button className="w-50 mt-4 btn btn-outline-danger border-radius"><span className="button-style" onClick={() => deleteBooking(mybooking._id)}>Cancel the package</span></button>
+                                                    <button onClick={() => deleteBooking(mybooking._id)} className="w-100 mt-4 btn btn-outline-danger border-radius">Cancel the package</button>
                                                 </div>
                                             </div>)
                                     }

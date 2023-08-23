@@ -8,39 +8,39 @@ import './AboutUs.css';
 const AboutUs = () => {
     return (
         <div id='about-us' className="about-us-bg text-dark d-flex justify-content-center align-items-center">
-            <div className="container-fluid p-lg-5 p-4">
-                <div className="row g-5">
+            <div className="container px-lg-0 px-4 py-5">
+                <div className="row g-5 align-items-center">
                     <div className="col-12 col-lg-6">
                         <div className="row g-3">
                             <div className="col-12 col-lg-6">
-                                <div className="img-content">
+                                <div className="img-content border border-2 border-dark border-radius p-2 overflow-hidden">
                                     <div className="d-flex justify-content-center align-items-center">
                                         <h3 className="position-absolute text-white">C O X' S B A Z A R</h3>
-                                        <img src={img1} alt="" className="img-fluid border-radius border border-2 p-2 border-dark" />
+                                        <img src={img1} alt="" className="img-fluid border-radius" />
                                     </div>
                                 </div>
                             </div>
                             <div className="col-12 col-lg-6">
-                                <div className="img-content">
+                                <div className="img-content border border-2 border-dark border-radius p-2 overflow-hidden">
                                     <div className="d-flex justify-content-center align-items-center">
                                         <h3 className="position-absolute text-white">G U L I A K H A L I</h3>
-                                        <img src={img2} alt="" className="img-fluid border-radius border border-2 p-2 border-dark" />
+                                        <img src={img2} alt="" className="img-fluid border-radius" />
                                     </div>
                                 </div>
                             </div>
                             <div className="col-12 col-lg-6">
-                                <div className="img-content">
+                                <div className="img-content border border-2 border-dark border-radius p-2 overflow-hidden">
                                     <div className="d-flex justify-content-center align-items-center">
                                         <h3 className="position-absolute text-white">S U N D A R B A N</h3>
-                                        <img src={img3} alt="" className="img-fluid border-radius border border-2 p-2 border-dark" />
+                                        <img src={img3} alt="" className="img-fluid border-radius" />
                                     </div>
                                 </div>
                             </div>
                             <div className="col-12 col-lg-6">
-                                <div className="img-content">
+                                <div className="img-content border border-2 border-dark border-radius p-2 overflow-hidden">
                                     <div className="d-flex justify-content-center align-items-center">
                                         <h3 className="position-absolute text-white">V O L A G A N J</h3>
-                                        <img src={img4} alt="" className="img-fluid border-radius border border-2 p-2 border-dark" />
+                                        <img src={img4} alt="" className="img-fluid border-radius" />
                                     </div>
                                 </div>
                             </div>
@@ -51,7 +51,7 @@ const AboutUs = () => {
                         <h2 className="mb-4">Plan Your Trip with Us</h2>
                         <p>When we created Holiday Planners, we knew we wanted to be more than just a travelling Agency. Having worked in traditional travel agency in the past, we knew we needed to create a concept that would provide our customers with the most effective things for success. This meant we needed to offer a wide range of services for our travel loving customers.</p><br />
                         <p>This also meant we needed to provide a learning environment run by experienced and successful coaches. However, our most important goal was to create a welcoming atmosphere and community in which everyone feels a sense of belonging.</p>
-                        <div className="mt-5 row g-3">
+                        <div className="mt-4 row g-3">
                             <div className="col-12 col-md-6 col-lg-3">
                                 <div className="text-center about-card h-100">
                                     <i className="fas fa-bus fs-2 mb-3"></i>

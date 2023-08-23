@@ -1,9 +1,8 @@
-.error-content {
+.not-found-bg {
+    background-color: white;
     min-height: 100vh;
 }
-.not-found-bg{
-    background-color: rgb(242, 226, 250);
-}
+
 .not-found-img {
     width: 35%;
 }

@@ -19,7 +19,7 @@ const Services = () => {
                 </div>
             </div>) : (<div id='services' className="services-bg text-dark">
                 <div className="services-content">
-                    <div className="container p-4 px-lg-0">
+                    <div className="container px-lg-0 px-4 py-5">
                         <h5 className="mb-5 border-start border-3 ps-3 border-dark">Amazing Tours Packages</h5>
                         <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
                             {
